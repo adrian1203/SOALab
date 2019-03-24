@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+   <title>Anieta</title>
+</h:head>
+
+<h:body>
+
+   <h:form>
+      <h3>Ankieta</h3>
+      <h:panelGrid columns="3">
+         <h:outputLabel for="name">Imie</h:outputLabel>
+         <h:inputText value="#{Poll.name}" id="name" >
+         </h:inputText>
+      </h:panelGrid>
+      <h:panelGrid columns="3">
+         <h:outputLabel for="email">Email</h:outputLabel>
+         <h:inputText value="#{Poll.email}" id="email" >
+
+         </h:inputText>
+      </h:panelGrid>
+      <h:panelGrid columns="3">
+         <h:outputLabel for="age">Wiek</h:outputLabel>
+         <h:inputText value="#{Poll.age}" id="age" >
+            <f:convertNumber integerOnly="true" type="number"/>
+            <f:validateLongRange minimum="10" maximum="100"/>
+         </h:inputText>
+      </h:panelGrid>
+      <h:panelGrid columns="3">
+         <h:outputLabel for="education">Wykształcenie</h:outputLabel>
+         <h:inputText value="#{Poll.education}" id="education">
+         </h:inputText>
+      </h:panelGrid>
+
+
+      <h:panelGrid columns="3">
+         <h:outputLabel for="gender"  >Płeć</h:outputLabel>
+         <h:selectOneMenu binding="#{Poll.htmlSelectOneMenu}" valueChangeListener="#{Poll.selectGender}" onchange="submit()" value = "#{Poll.gender}" id="gender">
+            <f:selectItem itemValue = "" itemLabel = "" />
+            <f:selectItem itemValue = "famale" itemLabel = "Kobieta" />
+            <f:selectItem itemValue = "male" itemLabel = "Mężczyzna" />
+         </h:selectOneMenu>
+      </h:panelGrid>
+      <h:panelGrid columns="3" rendered="#{Poll.male}">
+         <h:outputLabel for="heightmen">Wzrost</h:outputLabel>
+         <h:inputText value="#{Poll.height}" id="heightmen">
+         </h:inputText>
+      </h:panelGrid>
+      <h:panelGrid columns="3" rendered="#{Poll.famale}">
+         <h:outputLabel for="heightwoman">Wzrost</h:outputLabel>
+         <h:inputText value="#{Poll.height}" id="heightwoman">
+         </h:inputText>
+      </h:panelGrid>
+      <h:panelGrid columns="3"  rendered="#{Poll.famale}" >
+         <h:outputLabel for="bustCircuit">Obwód biustu </h:outputLabel>
+         <h:inputText value="#{Poll.bustCircuit}" id="bustCircuit">
+         </h:inputText>
+      </h:panelGrid>
+
+      <h:panelGrid columns="3" rendered="#{Poll.famale}">
+         <h:outputLabel for="cupSize">Rozmiar miseczki</h:outputLabel>
+         <h:inputText value="#{Poll.cupSize}" id="cupSize">
+         </h:inputText>
+      </h:panelGrid>
+      <h:panelGrid columns="3" rendered="#{Poll.famale}">
+         <h:outputLabel for="waistSize">Talia </h:outputLabel>
+         <h:inputText value="#{Poll.waistSize}" id="waistSize">
+         </h:inputText>
+      </h:panelGrid>
+      <h:panelGrid columns="3" rendered="#{Poll.famale}">
+         <h:outputLabel for="hipSize">Biodra </h:outputLabel>
+         <h:inputText value="#{Poll.hipSize}" id="hipSize">
+         </h:inputText>
+      </h:panelGrid>
+      <h:panelGrid columns="3" rendered="#{Poll.male}">
+         <h:outputLabel for="chestSize">Klatka piersiowa</h:outputLabel>
+         <h:inputText value="#{Poll.chestSize}" id="chestSize">
+         </h:inputText>
+      </h:panelGrid>
+      <h:panelGrid columns="3" rendered="#{Poll.male}">
+         <h:outputLabel for="menwaistSize">Obwód pasa </h:outputLabel>
+         <h:inputText value="#{Poll.menwaistSize}" id="menwaistSize">
+         </h:inputText>
+      </h:panelGrid>
+
+
+
+      <h:panelGrid  columns="3" rendered="#{Poll.male or Poll.famale}">
+         <h:selectOneMenu id="pytanie1" value="#{Poll.question1}" >
+            Ile jesteś w stanie przeznaczyć miesięcznie na zakup ubrania?
+            <f:selectItem itemValue="do 100 zł" itemLabel="do 100 zł" />
+            <f:selectItem itemValue="100-500 zł" itemLabel="100-500 zł" />
+            <f:selectItem itemValue="500-1000 zł" itemLabel="500-1000 zł" />
+            <f:selectItem itemValue="powyżej 1000 zł" itemLabel="powyżej 1000 zł" />
+         </h:selectOneMenu>
+      </h:panelGrid>
+
+      <h:panelGrid columns="3" rendered="#{Poll.male or Poll.famale}">
+         <h:selectOneMenu id="pytanie3" value="#{Poll.question2}" >
+            Jak często dokonujesz zakupu ubrania?
+            <f:selectItem itemValue="Codziennie" itemLabel="Codziennie" />
+            <f:selectItem itemValue="Raz w tygodniu" itemLabel="Raz w tygodniu" />
+            <f:selectItem itemValue="Raz w miesiącu" itemLabel="Raz w miesiącu" />
+            <f:selectItem itemValue="Kilka razy w roku" itemLabel="Kilka razy w roku" />
+         </h:selectOneMenu>
+      </h:panelGrid>
+
+      <h:panelGrid columns="3" rendered="#{Poll.male or Poll.famale}">
+         <h:selectManyListbox id="pytanie4" value="#{Poll.question3}" >
+            W jakich kolorach preferujesz ubrania?
+            <f:selectItem itemValue="Kolorowo-jaskrawych" itemLabel="Kolorowo-jaskrawych" />
+            <f:selectItem itemValue="Stonowanych w szarościach" itemLabel="Stonowanych w szarościach" />
+            <f:selectItem itemValue="W czerni i bieli" itemLabel="W czerni i bieli" />
+            <f:selectItem itemValue="W samej czerni" itemLabel="W samej czerni" />
+         </h:selectManyListbox>
+      </h:panelGrid>
+
+      <h:panelGrid rendered="#{Poll.famale or Poll.aditionalQuestions}">
+         <h:selectManyListbox id="pytanie5w" value="#{Poll.question4}">
+            Jakiego rodzaju ubrania najchętniej kupujesz?
+            <f:selectItem itemValue="garsonki" itemLabel="garsonki" />
+            <f:selectItem itemValue="bluzki" itemLabel="bluzki" />
+            <f:selectItem itemValue="spódniczki" itemLabel="spódniczki" />
+            <f:selectItem itemValue="spodnie" itemLabel="spodnie" />
+         </h:selectManyListbox>
+      </h:panelGrid>
+
+
+      <h:panelGrid rendered="#{Poll.male or Poll.aditionalQuestions}">
+         <h:selectManyListbox id="pytanie5m" value="#{Poll.question4}">
+            Jakiego rodzaju ubrania najchętniej kupujesz?
+            <f:selectItem itemValue="spodnie" itemLabel="spodnie" />
+            <f:selectItem itemValue="spodenki" itemLabel="spodenki" />
+            <f:selectItem itemValue="garnitury" itemLabel="garnitury" />
+            <f:selectItem itemValue="koszule" itemLabel="koszule" />
+            <f:selectItem itemValue="krawaty" itemLabel="krawaty" />
+         </h:selectManyListbox>
+      </h:panelGrid>
+      <h:panelGrid rendered="#{Poll.male or Poll.famale}">
+         <h:commandButton value="Zatwierdź ankietę" action="answer"></h:commandButton>
+      </h:panelGrid>
+
+
+
+
+
+
+   </h:form>
+
+
+   <!--<a href="clickAction.jsp?id=#{Poll.randomBaner}"><img src="#{Poll.randomBaner}" alt="baner" /></a>-->
+
+</h:body>
+
+</html>
