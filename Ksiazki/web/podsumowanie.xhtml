@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xml:lang="en" lang="en">
+<h:head>
+    <title>Podsumowanie</title>
+</h:head>
+<h:body>
+
+    <h2>Podsumowanie wyboru ksiązek</h2> <br/>
+    Ilość zamówionych książek: <b><h:outputText value="#{BookService.countBooks()}" /></b><br/>
+    Cena książek: <b><h:outputText value="#{BookService.allPrice()}" /></b><br/>
+
+
+    <h:dataTable  value="#{BookService.choosenBook}" valueChangeListener="#{BookService.criteriaBook}" var="book" border="1" cellpadding="7px">
+
+        <h:column>
+            <f:facet name="header">Tytuł <br></br>
+            </f:facet>
+            #{book.title}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Autor</f:facet>
+            #{book.author}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Typ ksiązki</f:facet>
+            #{book.bookType}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Cena</f:facet>
+            #{book.price}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Waluta</f:facet>
+            #{book.currency}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Liczba stron</f:facet>
+            #{book.numberOfPage}
+        </h:column>
+        <h:column>
+            <f:facet name="header"><br></br>
+            </f:facet>
+            <h:commandButton action="${BookService.addToBucket(book)}" label="Dodaj"/>
+
+
+            <!--<h:selectManyCheckbox value="#{book.id}">-->
+            <!--<f:selectItems value="#{book.id}" />-->
+            <!--<f:selectItems value="#{book.id}" />-->
+            <!--</h:selectManyCheckbox>-->
+
+        </h:column>
+
+
+    </h:dataTable>
+
+
+
+</h:body>
+</html>
