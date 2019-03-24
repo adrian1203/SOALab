@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Be
 public class Counter {
     private static List<Integer> listOfClicks = new ArrayList<Integer>();
 

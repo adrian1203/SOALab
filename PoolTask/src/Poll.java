@@ -6,6 +6,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
 import javax.faces.component.UIComponent;
+import javax.faces.component.html.HtmlSelectManyListbox;
 import javax.faces.component.html.HtmlSelectOneMenu;
 import javax.faces.component.html.HtmlSelectOneRadio;
 import javax.faces.context.FacesContext;
@@ -16,8 +17,7 @@ import java.util.Random;
 
 @ManagedBean(name = "Poll")
 @SessionScoped
-@FacesValidator("Poll")
-public class Poll implements Validator {
+public class Poll  {
 
     private String name;
     private String email;
@@ -46,6 +46,10 @@ public class Poll implements Validator {
 
     private HtmlSelectOneMenu htmlSelectOneMenu;
 
+    private HtmlSelectManyListbox htmlSelectManyListbox3;
+    private HtmlSelectManyListbox htmlSelectManyListbox4;
+
+
     private Boolean male, famale;
 
     public HtmlSelectOneMenu getHtmlSelectOneMenu() {
@@ -56,6 +60,21 @@ public class Poll implements Validator {
         this.htmlSelectOneMenu = htmlSelectOneMenu;
     }
 
+    public HtmlSelectManyListbox getHtmlSelectManyListbox3() {
+        return htmlSelectManyListbox3;
+    }
+
+    public void setHtmlSelectManyListbox3(HtmlSelectManyListbox htmlSelectManyListbox3) {
+        this.htmlSelectManyListbox3 = htmlSelectManyListbox3;
+    }
+
+    public HtmlSelectManyListbox getHtmlSelectManyListbox4() {
+        return htmlSelectManyListbox4;
+    }
+
+    public void setHtmlSelectManyListbox4(HtmlSelectManyListbox htmlSelectManyListbox4) {
+        this.htmlSelectManyListbox4 = htmlSelectManyListbox4;
+    }
 
     public Boolean getMale() {
         return male;
@@ -230,9 +249,6 @@ public class Poll implements Validator {
         this.selectGender();
     }
 
-//    public String renderAnswer(){
-//        return "answer";
-//    }
 
     public String getRandomBaner(){
         Random random = new Random();
@@ -240,17 +256,22 @@ public class Poll implements Validator {
         return "b" + wylosowana + ".jpg";
     }
 
-    public void validate(FacesContext facesContext, UIComponent uiComponent, Object o) throws ValidatorException {
-            if(this.getAge()>100){
-                FacesMessage msg = new FacesMessage(
-                        " Maximum Length of 6 is exceeded.Please enter values within range");
-                msg.setSeverity(FacesMessage.SEVERITY_ERROR);
+    public String question3ToString(){
+        String tmp="";
+        for (String str:question3){
+            tmp+=str + " ";
+        }
+        return tmp;
+    }
 
-                throw new ValidatorException(msg);
-            }
+    public String question4ToString(){
+        String tmp=", ";
+        for (String str:question4){
+            tmp+=str + ", ";
+        }
+        return tmp;
+    }
 
-        //throw new ValidatorException(msg);
 
-    };
 }
 

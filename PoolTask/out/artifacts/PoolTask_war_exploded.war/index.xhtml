@@ -16,23 +16,26 @@
    <h:form>
       <h3>Ankieta</h3>
       <h:panelGrid columns="3">
-         <h:outputLabel for="name">Imie <i>(wymagane)</i></h:outputLabel>
-         <h:inputText value="#{Poll.name}" id="name" rendered="true" >
+         <h:outputLabel for="name">Imie</h:outputLabel>
+         <h:inputText value="#{Poll.name}" id="name" rendered="true" required="true" requiredMessage="To pole jest wymagane">
          </h:inputText>
+          <h:message for="name" style="color:red" />
       </h:panelGrid>
       <h:panelGrid columns="3">
-         <h:outputLabel for="email">Email <i>(wymagane)</i></h:outputLabel>
-         <h:inputText value="#{Poll.email}" id="email" rendered="true" validatorMessage="Wprowadź poprawny adres" >
+         <h:outputLabel for="email">Email</h:outputLabel>
+         <h:inputText value="#{Poll.email}" id="email" rendered="true" required="true" requiredMessage="Pole wymagane" validatorMessage="Wprowadź poprawny adres" >
              <f:validateRegex
-                     pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$"/>         </h:inputText>
+                     pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$"/>
+         </h:inputText>
+          <h:message for="email" style="color:red" />
       </h:panelGrid>
       <h:panelGrid columns="3">
-         <h:outputLabel for="age">Wiek <i>(10-100)</i></h:outputLabel>
-         <h:inputText value="#{Poll.age}" id="age" >
+         <h:outputLabel for="age">Wiek</h:outputLabel>
+         <h:inputText value="#{Poll.age}" id="age"  required="true" requiredMessage="Pole wymagane"  validatorMessage="Ankieta dla osób w wieku 10 - 100 lat ">
             <f:convertNumber integerOnly="true" type="number"/>
             <f:validateLongRange minimum="10" maximum="100"/>
          </h:inputText>
-          <h:message for="age" />
+          <h:message for="age" style="color:red"/>
       </h:panelGrid>
       <h:panelGrid columns="3">
          <h:outputLabel for="education">Wykształcenie</h:outputLabel>
@@ -50,18 +53,20 @@
          </h:selectOneMenu>
       </h:panelGrid>
       <h:panelGrid columns="3" rendered="#{Poll.male}">
-         <h:outputLabel for="heightmen">Wzrost <i>(165 - 200)</i></h:outputLabel>
-         <h:inputText value="#{Poll.height}" id="heightmen">
+         <h:outputLabel for="heightmen">Wzrost</h:outputLabel>
+         <h:inputText value="#{Poll.height}" id="heightmen" validatorMessage="Twój wzrost powinien być w przedziale 165 - 200 cm">
              <f:convertNumber integerOnly="true" type="number"/>
              <f:validateLongRange minimum="165" maximum="200"/>
          </h:inputText>
+          <h:message for="heightmen" style="color:red"/>
       </h:panelGrid>
       <h:panelGrid columns="3" rendered="#{Poll.famale}">
-         <h:outputLabel for="heightwoman">Wzrost <i>(150-185)</i></h:outputLabel>
-         <h:inputText value="#{Poll.height}" id="heightwoman">
+         <h:outputLabel for="heightwoman">Wzrost </h:outputLabel>
+         <h:inputText value="#{Poll.height}" id="heightwoman" validatorMessage="Twój wzrost powinien być w przedziale 150 - 185 cm">
              <f:convertNumber integerOnly="true" type="number"/>
              <f:validateLongRange minimum="150" maximum="185"/>
          </h:inputText>
+          <h:message for="heightwoman" style="color:red"/>
       </h:panelGrid>
       <h:panelGrid columns="3"  rendered="#{Poll.famale}" >
          <h:outputLabel for="bustCircuit">Obwód biustu </h:outputLabel>
