@@ -236,7 +236,7 @@ public class Poll implements Validator {
 
     public String getRandomBaner(){
         Random random = new Random();
-        int wylosowana = random.nextInt(1);
+        int wylosowana = random.nextInt(2);
         return "b" + wylosowana + ".jpg";
     }
 

@@ -16,18 +16,19 @@
    <h:form>
       <h3>Ankieta</h3>
       <h:panelGrid columns="3">
-         <h:outputLabel for="name">Imie</h:outputLabel>
+         <h:outputLabel for="name">Imie <i>(wymagane)</i></h:outputLabel>
          <h:inputText value="#{Poll.name}" id="name" rendered="true" >
          </h:inputText>
       </h:panelGrid>
       <h:panelGrid columns="3">
-         <h:outputLabel for="email">Email</h:outputLabel>
+         <h:outputLabel for="email">Email <i>(wymagane)</i></h:outputLabel>
          <h:inputText value="#{Poll.email}" id="email" rendered="true" validatorMessage="Wprowadź poprawny adres" >
              <f:validateRegex
                      pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$"/>         </h:inputText>
+          <h:message for="email" style="color:red" />
       </h:panelGrid>
       <h:panelGrid columns="3">
-         <h:outputLabel for="age">Wiek</h:outputLabel>
+         <h:outputLabel for="age">Wiek <i>(10-100)</i></h:outputLabel>
          <h:inputText value="#{Poll.age}" id="age" >
             <f:convertNumber integerOnly="true" type="number"/>
             <f:validateLongRange minimum="10" maximum="100"/>
@@ -50,14 +51,14 @@
          </h:selectOneMenu>
       </h:panelGrid>
       <h:panelGrid columns="3" rendered="#{Poll.male}">
-         <h:outputLabel for="heightmen">Wzrost</h:outputLabel>
+         <h:outputLabel for="heightmen">Wzrost <i>(165 - 200)</i></h:outputLabel>
          <h:inputText value="#{Poll.height}" id="heightmen">
              <f:convertNumber integerOnly="true" type="number"/>
              <f:validateLongRange minimum="165" maximum="200"/>
          </h:inputText>
       </h:panelGrid>
       <h:panelGrid columns="3" rendered="#{Poll.famale}">
-         <h:outputLabel for="heightwoman">Wzrost</h:outputLabel>
+         <h:outputLabel for="heightwoman">Wzrost <i>(150-185)</i></h:outputLabel>
          <h:inputText value="#{Poll.height}" id="heightwoman">
              <f:convertNumber integerOnly="true" type="number"/>
              <f:validateLongRange minimum="150" maximum="185"/>
@@ -160,7 +161,7 @@
    </h:form>
 
 
-   <!--<a href="clickAction.jsp?id=#{Poll.randomBaner}"><img src="#{Poll.randomBaner}" alt="baner" /></a>-->
+   <a href="clickAction.jsp?id=#{Poll.randomBaner}"><img src="#{Poll.randomBaner}" alt="baner" /></a>
 
 </h:body>
 
