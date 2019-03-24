@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+   <title>Księgarnia</title>
+</h:head>
+
+<h:body>
+   <f:view>
+      <h:outputLabel value="Dokonaj przeglądu stron"/>
+
+   </f:view>
+   <br></br>
+
+   <f:view>
+      <h:outputLabel value="Tabela z ksiązkami"/>
+   </f:view>
+   <h:dataTable value="#{BookService.getFilteredBooks()}" valueChangeListener="#{BookService.criteriaBook}" var="book" border="1" cellpadding="7px">
+
+      <h:column>
+         <f:facet name="header">Tytuł <br></br>
+            <h:inputText id="title" value="#{BookService.criteriaBook.title}"></h:inputText>
+         </f:facet>
+         #{book.title}
+      </h:column>
+      <h:column>
+         <f:facet name="header">Autor</f:facet>
+         #{book.author}
+      </h:column>
+      <h:column>
+         <f:facet name="header">Typ ksiązki</f:facet>
+         #{book.bookType}
+      </h:column>
+      <h:column>
+         <f:facet name="header">Cena</f:facet>
+         #{book.price}
+      </h:column>
+      <h:column>
+         <f:facet name="header">Waluta</f:facet>
+         #{book.currency}
+      </h:column>
+      <h:column>
+         <f:facet name="header">Liczba stron</f:facet>
+         #{book.numberOfPage}
+      </h:column>
+      <h:column>
+         <f:facet name="header"><br></br>
+         </f:facet>
+
+         <h:selectManyCheckbox id="pytanie5m" value="#{BookService.choosenBook}">
+            Zamawiam
+            <f:selectItem itemValue="#{book}" itemLabel="" />
+         </h:selectManyCheckbox>
+
+         <!--<h:selectManyCheckbox value="#{book.id}">-->
+            <!--<f:selectItems value="#{book.id}" />-->
+            <!--<f:selectItems value="#{book.id}" />-->
+         <!--</h:selectManyCheckbox>-->
+
+      </h:column>
+
+   </h:dataTable>
+
+   <h:button value="Zatwierdź zamówienie" outcome="podsumowanie"></h:button>
+
+
+
+</h:body>
+
+</html>
