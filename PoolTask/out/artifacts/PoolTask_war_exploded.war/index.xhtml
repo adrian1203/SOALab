@@ -46,15 +46,16 @@
 
       <h:panelGrid columns="3">
          <h:outputLabel for="gender"  >Płeć</h:outputLabel>
-         <h:selectOneMenu binding="#{Poll.htmlSelectOneMenu}" valueChangeListener="#{Poll.selectGender}" onchange="submit()" value = "#{Poll.gender}" id="gender">
+         <h:selectOneMenu binding="#{Poll.htmlSelectOneMenu}" valueChangeListener="#{Poll.selectGender}"  value = "#{Poll.gender}" id="gender">
             <f:selectItem itemValue = "" itemLabel = "" />
             <f:selectItem itemValue = "famale" itemLabel = "Kobieta" />
             <f:selectItem itemValue = "male" itemLabel = "Mężczyzna" />
+            <f:ajax execute = "gender" render = "output"></f:ajax>
          </h:selectOneMenu>
       </h:panelGrid>
-      <h:panelGrid columns="3" rendered="#{Poll.male}">
+      <h:panelGrid columns="3" id="output" rendered="#{Poll.male}">
          <h:outputLabel for="heightmen">Wzrost</h:outputLabel>
-         <h:inputText value="#{Poll.height}" id="heightmen" validatorMessage="Twój wzrost powinien być w przedziale 165 - 200 cm">
+         <h:inputText value="#{Poll.height}" required="true" requiredMessage="Pole wymagane" id="heightmen" validatorMessage="Twój wzrost powinien być w przedziale 165 - 200 cm">
              <f:convertNumber integerOnly="true" type="number"/>
              <f:validateLongRange minimum="165" maximum="200"/>
          </h:inputText>
@@ -62,7 +63,7 @@
       </h:panelGrid>
       <h:panelGrid columns="3" rendered="#{Poll.famale}">
          <h:outputLabel for="heightwoman">Wzrost </h:outputLabel>
-         <h:inputText value="#{Poll.height}" id="heightwoman" validatorMessage="Twój wzrost powinien być w przedziale 150 - 185 cm">
+         <h:inputText value="#{Poll.height}" required="true" requiredMessage="Pole wymagane" id="heightwoman" validatorMessage="Twój wzrost powinien być w przedziale 150 - 185 cm">
              <f:convertNumber integerOnly="true" type="number"/>
              <f:validateLongRange minimum="150" maximum="185"/>
          </h:inputText>

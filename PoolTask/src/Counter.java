@@ -1,8 +1,9 @@
+import javax.faces.bean.ManagedBean;
 import java.util.ArrayList;
 import java.util.List;
 
 
-@Be
+@ManagedBean
 public class Counter {
     private static List<Integer> listOfClicks = new ArrayList<Integer>();
 
