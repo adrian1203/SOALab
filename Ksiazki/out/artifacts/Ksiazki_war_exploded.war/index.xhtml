@@ -7,127 +7,156 @@
 >
 
 <h:head>
-   <title>Księgarnia</title>
+    <title>Księgarnia</title>
 </h:head>
 
 <h:body>
     <h:form>
-   <f:view>
+        <f:view>
 
-      <h:outputLabel value="Dokonaj przeglądu stron"/>
+        </f:view>
+        <br></br>
 
-   </f:view>
-   <br></br>
+        <f:view>
+            <h2>Spis wszystkich ksiązek</h2> <br/>
+            <h:outputLabel for="selectCurrency">Wyświetlana waluta</h:outputLabel>
 
-   <f:view>
-      <h:outputLabel value="Tabela z ksiązkami"/>
-   </f:view>
-   <h:dataTable value="#{BookService.getFilteredBooks()}" valueChangeListener="#{BookService.criteriaBook}" var="book" border="1" cellpadding="7px">
+            <h:selectOneMenu binding="#{BookService.htmlSelectOneMenu}"
+                              value="#{BookService.selectCurrency}"
+                             id="selectCurrency">
+                <f:selectItem itemValue="orginal" itemLabel="Orginalna"/>
+                <f:selectItem itemValue="PLN" itemLabel="PLN"/>
+                <f:ajax event="change" listener="#{BookService.displayPrice}" execute="@this" render="@form"/>
 
-      <h:column>
-         <f:facet name="header">Tytuł <br></br>
-            <h:inputText id="title" value="#{BookService.criteriaBook.title}"></h:inputText>
-         </f:facet>
-         #{book.title}
-      </h:column>
-      <h:column>
-         <f:facet name="header">Autor</f:facet>
-         #{book.author}
-      </h:column>
-      <h:column>
-         <f:facet name="header">Typ ksiązki</f:facet>
-         #{book.bookType}
-      </h:column>
-      <h:column>
-         <f:facet name="header">Cena</f:facet>
-         #{book.price}
-      </h:column>
-      <h:column>
-         <f:facet name="header">Waluta</f:facet>
-         #{book.currency}
-      </h:column>
-      <h:column>
-         <f:facet name="header">Liczba stron</f:facet>
-         #{book.numberOfPage}
-      </h:column>
-      <h:column>
-         <f:facet name="header"><br></br>
-         </f:facet>
-          <h:commandButton value="Dodaj" action="#{BookService.addToBucket(book)}"></h:commandButton>
+            </h:selectOneMenu>
+            <br></br>
+            <h:outputLabel for="minPrice">Minimalna Cena</h:outputLabel>
+            <h:inputText value="#{BookService.minPrice}" id="minPrice">
+            </h:inputText>
 
+            <h:outputLabel for="maxPrice">Maxymalna Cena</h:outputLabel>
+            <h:inputText value="#{BookService.maxPrice}" id="maxPrice">
+            </h:inputText>
 
+            <h:outputLabel>W jakiej walucie</h:outputLabel>
+            <h:selectOneMenu binding="#{BookService.htmlSelectOneMenuFilterCurrency}" onchange="submit()"
+                             value="#{BookService.selectFilterCurrency}">
+                <f:selectItem itemValue="" itemLabel=""/>
+                <f:selectItem itemValue="PLN" itemLabel="PLN"/>
+                <f:selectItem itemValue="EURO" itemLabel="EURO"/>
+                <f:selectItem itemValue="DOLAR" itemLabel="DOLAR"/>
+            </h:selectOneMenu>
 
-          <!--<h:selectManyCheckbox value="#{book.id}">-->
-            <!--<f:selectItems value="#{book.id}" />-->
-            <!--<f:selectItems value="#{book.id}" />-->
-         <!--</h:selectManyCheckbox>-->
-
-      </h:column>
+            <h:outputLabel>Ukryj kategorie </h:outputLabel>
+            <h:selectManyListbox binding="#{BookService.htmlSelectManyListbox}" value="#{BookService.selectedType}">
+                <f:selectItem itemValue="" itemLabel=""/>
+                <f:selectItem itemValue="WOJENNA" itemLabel="WOJENNA"/>
+                <f:selectItem itemValue="ROMANS" itemLabel="ROMANS"/>
+                <f:selectItem itemValue="PRZYGODOWA" itemLabel="PRZYGODOWA"/>
+                <f:selectItem itemValue="KRYMINAŁ" itemLabel="KRYMINAŁ"/>
+                <f:selectItem itemValue="PUBLICYSTYCZNA" itemLabel="PUBLICYSTYCZNA"/>
+                <f:selectItem itemValue="BIOGRAFIA" itemLabel="BIOGRAFIA"/>
+            </h:selectManyListbox>
 
 
-   </h:dataTable>
+            <h:commandButton value="Fltruj" action="#{BookService.getFilteredBooks()}"></h:commandButton>
+            <h:commandButton value="Wyczyść filtr" action="#{BookService.clearFiltr()}"></h:commandButton>
+
+
+        </f:view>
+        <h:dataTable value="#{BookService.bookList}" valueChangeListener="#{BookService.criteriaBook}" var="book"
+                     border="1" cellpadding="7px">
+
+            <h:column>
+                <f:facet name="header">Tytuł <br></br>
+                </f:facet>
+                #{book.title}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Autor</f:facet>
+                #{book.author}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Typ ksiązki</f:facet>
+                #{book.bookType}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Cena</f:facet>
+                <h:outputText value="#{book.price}">
+                    <f:convertNumber maxFractionDigits="2"/>
+                </h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Waluta</f:facet>
+                #{book.currency}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Liczba stron</f:facet>
+                #{book.numberOfPage}
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Dodaj">
+                    <f:ajax event="click" listener="#{BookService.addToBucket(book)}" execute="@this" render="@form"/>
+                </h:commandButton>
+            </h:column>
+
+
+        </h:dataTable>
+
+        <h:panelGrid id="choosedBooks">
+
+
+            <h2>Podsumowanie wyboru ksiązek</h2> <br/>
+            Ilość zamówionych książek: <b><h:outputText value="#{BookService.countBooks()}"/></b><br/>
+            Cena książek przeliczona na PLN: <b><h:outputText value="#{BookService.allPrice()}">
+            <f:convertNumber maxFractionDigits="2"/>
+        </h:outputText></b><br/>
+            <h:dataTable value="#{BookService.choosenBook}" var="book" border="1" cellpadding="7px">
+
+                <h:column>
+                    <f:facet name="header">Tytuł <br></br>
+                    </f:facet>
+                    #{book.title}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Autor</f:facet>
+                    #{book.author}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Typ ksiązki</f:facet>
+                    #{book.bookType}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Cena</f:facet>
+                    <h:outputText value="#{book.price}">
+                        <f:convertNumber maxFractionDigits="2"/>
+                    </h:outputText> </h:column>
+                <h:column>
+                    <f:facet name="header">Waluta</f:facet>
+                    #{book.currency}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Liczba stron</f:facet>
+                    #{book.numberOfPage}
+                </h:column>
+                <h:column>
+                    <f:facet name="header"><br></br>
+                    </f:facet>
+
+                    <h:commandButton value="Usuń">
+                        <f:ajax event="click" listener="#{BookService.removeFromBucket(book)}" execute="@this" render="@form"/>
+                    </h:commandButton>
+
+                </h:column>
+
+
+            </h:dataTable>
+        </h:panelGrid>
     </h:form>
 
-
-
-    <!--<h:button value="Zatwierdź zamówienie" outcome="podsumowanie">   </h:button>-->
-
-    <!--<h:commandButton value="Zatwierdź zamówienie" actionListener="#{BookService.createAnswer()}" update="@form" />-->
-
-    <!--<h:panelGroup rendered="#{BookService.createAnswer}">-->
-
-
-
-    <h2>Podsumowanie wyboru ksiązek</h2> <br/>
-       Ilość zamówionych książek: <b><h:outputText value="#{BookService.countBooks()}" /></b><br/>
-       Cena książek: <b><h:outputText value="#{BookService.allPrice()}" /></b><br/>
-
-       <h:dataTable  value="#{BookService.choosenBook}"  var="book" border="1" cellpadding="7px">
-
-           <h:column>
-               <f:facet name="header">Tytuł <br></br>
-               </f:facet>
-               #{book.title}
-           </h:column>
-           <h:column>
-               <f:facet name="header">Autor</f:facet>
-               #{book.author}
-           </h:column>
-           <h:column>
-               <f:facet name="header">Typ ksiązki</f:facet>
-               #{book.bookType}
-           </h:column>
-           <h:column>
-               <f:facet name="header">Cena</f:facet>
-               #{book.price}
-           </h:column>
-           <h:column>
-               <f:facet name="header">Waluta</f:facet>
-               #{book.currency}
-           </h:column>
-           <h:column>
-               <f:facet name="header">Liczba stron</f:facet>
-               #{book.numberOfPage}
-           </h:column>
-           <h:column>
-               <f:facet name="header"><br></br>
-               </f:facet>
-               <h:commandButton value="Usuń" action="#{BookService.removeFromBucket(book)}"></h:commandButton>
-
-
-
-               <!--<h:selectManyCheckbox value="#{book.id}">-->
-               <!--<f:selectItems value="#{book.id}" />-->
-               <!--<f:selectItems value="#{book.id}" />-->
-               <!--</h:selectManyCheckbox>-->
-
-           </h:column>
-
-
-       </h:dataTable>
-
     <!--</h:panelGroup>-->
-
 
 
 </h:body>
