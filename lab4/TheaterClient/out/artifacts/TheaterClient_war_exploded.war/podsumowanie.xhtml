@@ -13,6 +13,10 @@
     <h:outputLabel value="#{TheaterBeen.userService.logedUser.money}"></h:outputLabel>
     <h2>Podsumowanie sprzedaży</h2>
 
+    <h:outputLabel style="color: red" rendered="#{TheaterBeen.notEnoughtMany}" value="Brak wsytraczającej kwoty na kącie na realizację wszystkich trnsakcji"></h:outputLabel>
+
+    <h:outputLabel style="color: red;" rendered="#{TheaterBeen.alreadyBooked}" value="Niektóre miejsca były zajęte wcześniej"></h:outputLabel>
+
     <h:outputLabel value="Zapłacona kwota: #{TheaterBeen.getAllAmount()}">
 
     </h:outputLabel>
@@ -33,5 +37,12 @@
             #{seat.price}
         </h:column>
     </h:dataTable>
+
+
+    <h:form>
+        <h:commandButton value="Wyloguj się" action="#{TheaterBeen.logOut()}"/>
+        <h:commandButton value="Kup inne bilety" action="#{TheaterBeen.goToReservation()}"/>
+    </h:form>
+
 </h:body>
 </html>

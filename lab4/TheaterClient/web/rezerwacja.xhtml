@@ -35,11 +35,11 @@
                 <c:forEach var="seat" varStatus="loop" items="#{TheaterBeen.availableSeat}" >
                     <f:selectItem  itemValue="#{seat}" itemLabel="#{seat.number} #{seat.seatType}  #{seat.price}PLN"/>
                 </c:forEach>
-                <f:ajax event="click" execute="@this" render="choosedSeat amout"/>
+                <f:ajax event="change" execute="@this" render="choosedSeat amout"/>
             </h:selectManyCheckbox>
         </div>
 
-        <h:outputLabel  id="amout" value="Całkowita kwota do zapłaty: #{TheaterBeen.getAllAmount()}"></h:outputLabel>
+        <h:outputLabel id="amout" value="Całkowita kwota do zapłaty: #{TheaterBeen.getAllAmount()}"></h:outputLabel>
     <h:dataTable  id="choosedSeat" value="#{TheaterBeen.choosedSeat}" var="seat" border="1" cellpadding="7px">
 
         <h:column>
@@ -59,6 +59,12 @@
 
     <h:commandButton value="Generuj Zamówienie" action="#{TheaterBeen.generatePayment()}"/>
     </h:form>
+
+    <h:form>
+        <h:commandButton value="Wyloguj się" action="#{TheaterBeen.logOut()}"/>
+    </h:form>
+
+
 
 
 
