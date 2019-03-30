@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="theater-implementation:ejb">
+    <output-path>$PROJECT_DIR$/theater-implementation/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>theater-implementation</module>
+        <packaging>ejb</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="theater-implementation-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="theater-implementation:ejb exploded" />
+    </root>
+  </artifact>
+</component>

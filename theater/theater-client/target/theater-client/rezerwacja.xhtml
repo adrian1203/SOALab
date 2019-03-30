@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:f="http://xmlns.jcp.org/jsf/core" xml:lang="en" lang="en">
+<h:head>
+    <title>System sprzedaży miejsc w Teaatrze</title>
+</h:head>
+
+<h:body>
+    <h1>Witaj <h:outputLabel value="#{TheaterBeen.userService.logedUser.name}"></h:outputLabel></h1>
+    <h2>Aby zakupić bilet wybierz odpowiednie miejsce z pośród aktualnie dostępnych</h2>
+    <p>Twój stan konta</p>
+    <h:outputLabel value="#{TheaterBeen.userService.logedUser.money}"></h:outputLabel>
+
+
+    <style type="text/css">
+        .seat-view table {
+            width: 100%;
+        }
+
+        .seat-view tr {
+            display: inline;
+        }
+
+        .seat-view td {
+            display: inline-block;
+            width: 24%;
+        }
+    </style>
+    <h:form>
+        <div class="seat-view">
+            <h:selectManyCheckbox id="seats"  value="#{TheaterBeen.choosedSeat}" valueChangeListener="#{TheaterBeen.displayChoosedSeat()}" >
+                <c:forEach var="seat" varStatus="loop" items="#{TheaterBeen.availableSeat}" >
+                    <f:selectItem  itemValue="#{seat}" itemLabel="#{seat.number} #{seat.seatType}  #{seat.price}PLN"/>
+                </c:forEach>
+                <f:ajax event="change" execute="@this" render="choosedSeat amout"/>
+            </h:selectManyCheckbox>
+        </div>
+
+        <h:outputLabel id="amout" value="Całkowita kwota do zapłaty: #{TheaterBeen.getAllAmount()}"></h:outputLabel>
+    <h:dataTable  id="choosedSeat" value="#{TheaterBeen.choosedSeat}" var="seat" border="1" cellpadding="7px">
+
+        <h:column>
+            <f:facet name="header">Numer miejsca <br></br>
+            </f:facet>
+            #{seat.number}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Typ miejsca</f:facet>
+            #{seat.seatType}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Cena</f:facet>
+            #{seat.price}
+        </h:column>
+    </h:dataTable>
+
+    <h:commandButton value="Generuj Zamówienie" action="#{TheaterBeen.generatePayment()}"/>
+    </h:form>
+
+    <h:form>
+        <h:commandButton value="Wyloguj się" action="#{TheaterBeen.logOut()}"/>
+    </h:form>
+
+
+
+
+
+
+
+
+
+</h:body>
+
+</html>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="theater-client:war">
+    <output-path>$PROJECT_DIR$/theater-client/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>theater-client</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="theater-client.war">
+      <element id="artifact" artifact-name="theater-client:war exploded" />
+    </root>
+  </artifact>
+</component>

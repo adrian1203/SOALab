@@ -2,17 +2,31 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="TheaterImplementation" />
+      <artifact name="TheaterImplementation:ejb exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2607f3f1-a784-49e5-bb3e-78af44552390" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/artifacts/TeatrWar_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/artifacts/TheaterWar_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/libraries/Mojarra_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/libraries/Mojarra_2_2_1__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/TeatrWar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/TheaterImplemetation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/TheatrWar/TheaterWar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/TheatrWar/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Teatr/TheatrWar/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PoolTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PoolTask/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TheaterClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterClient/src/soa/TheaterBeen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterClient/src/soa/TheaterBeen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterClient/web/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterClient/web/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterClient/web/podsumowanie.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterClient/web/podsumowanie.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterClient/web/rezerwacja.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterClient/web/rezerwacja.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/domain/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/domain/Seat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/SeatRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/SeatRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/service/PlaceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/service/UserService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/soa/repository/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/soa/service/SeatService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="255">
               <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/soa/service/PurchaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="476">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,10 +182,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1358" />
+    <option name="y" value="-211" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -181,7 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,41 +216,20 @@
             </path>
             <path>
               <item name="TheaterImplementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheaterImplementation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="soa" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheaterImplementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheaterImplementation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="soa" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheaterImplementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheaterImplementation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="soa" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheaterImplementation" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553728117411" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TheaterClient/web/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../theater/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -341,17 +334,20 @@
       <updated>1553697316728</updated>
       <workItem from="1553697318673" duration="13701000" />
       <workItem from="1553784991493" duration="1195000" />
+      <workItem from="1553962202966" duration="87000" />
+      <workItem from="1553966422211" duration="1554000" />
+      <workItem from="1553971137936" duration="255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14896000" />
+    <option name="totallyTimeSpent" value="16792000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-211" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21332519" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -361,7 +357,7 @@
       <window_info id="EJB" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.06873977" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5531915" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -442,7 +438,17 @@
     <entry file="file://$PROJECT_DIR$/src/soa/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soa/service/SeatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -510,20 +516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/soa/service/SeatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/soa/service/PurchaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

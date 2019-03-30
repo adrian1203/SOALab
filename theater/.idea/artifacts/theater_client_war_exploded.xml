@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="theater-client:war exploded">
+    <output-path>$PROJECT_DIR$/theater-client/target/theater-client</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>theater-client</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="theater-client" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="theater-implementation-1.0-SNAPSHOT-client.jar">
+            <element id="artifact" artifact-name="theater-implementation:ejb-client exploded" />
+          </element>
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:7.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/theater-client/target/theater-client/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="theater-client/web/Web" />
+    </root>
+  </artifact>
+</component>

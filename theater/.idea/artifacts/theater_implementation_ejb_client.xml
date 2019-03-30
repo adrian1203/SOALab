@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="theater-implementation:ejb-client">
+    <output-path>$PROJECT_DIR$/theater-implementation/target</output-path>
+    <root id="archive" name="theater-implementation-1.0-SNAPSHOT-client.jar">
+      <element id="artifact" artifact-name="theater-implementation:ejb-client exploded" />
+    </root>
+  </artifact>
+</component>
