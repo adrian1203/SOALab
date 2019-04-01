@@ -27,7 +27,6 @@ public class TheaterManager {
 
     @PostConstruct
     public void setupTheater(){
-        System.out.println("STARUP");
         logger.config("Inicjuje");
         UserRepository userRepository = new UserRepository();
         users = userRepository.getAllUser();

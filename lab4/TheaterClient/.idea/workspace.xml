@@ -7,26 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b0b82f-b036-4b48-aa67-ab3c514a1a5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/artifacts/TeatrWar_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/artifacts/TheaterWar_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/libraries/Mojarra_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/libraries/Mojarra_2_2_1__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TeatrWar.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TheaterImplemetation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TheatrWar/TheaterWar.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TheatrWar/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TheatrWar/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PoolTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PoolTask/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TheaterImplementation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterImplementation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterImplementation/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/domain/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterImplementation/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/domain/Seat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterImplementation/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/SeatRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterImplementation/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/SeatRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterImplementation/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterImplementation/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterImplementation/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/service/PlaceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterImplementation/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterImplementation/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../theater/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../theater/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../theater/theater-client/target/theater-client/WEB-INF/lib/theater-implementation-1.0-SNAPSHOT-client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../theater/theater-client/target/theater-client/WEB-INF/lib/theater-implementation-1.0-SNAPSHOT-client.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../theater/theater-implementation/target/theater-implementation-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../theater/theater-implementation/target/theater-implementation-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,6 +19,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="TheaterClient" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -48,12 +36,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
-          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="36" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="36" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
+          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -69,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -77,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/soa/TheaterBeen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state relative-caret-position="425">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,6 +98,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dis</find>
+      <find>faces-config</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,10 +117,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="y" value="-211" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -141,7 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,18 +164,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="XHTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553726842746" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553984631536" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/TheaterImplementation.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -293,23 +282,26 @@
       <workItem from="1553789375095" duration="1199000" />
       <workItem from="1553797586984" duration="55000" />
       <workItem from="1553962290313" duration="2501000" />
+      <workItem from="1553984019381" duration="913000" />
+      <workItem from="1554052459322" duration="609000" />
+      <workItem from="1554063446764" duration="77000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21000000" />
+    <option name="totallyTimeSpent" value="22599000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-211" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22799511" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.88870704" visible="true" weight="0.23524962" />
+      <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.22768533" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.22768533" />
+      <window_info active="true" id="Web" order="7" sideWeight="0.111292966" side_tool="true" visible="true" weight="0.23524962" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32474804" />
@@ -396,6 +388,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javax.faces-2.2.1.jar!/javax/faces/webapp/FacesServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2023">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -404,17 +403,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="36" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/podsumowanie.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="87" selection-start-line="43" selection-start-column="87" selection-end-line="43" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soa/TheaterBeen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -425,20 +434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/soa/TheaterBeen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -497,12 +496,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>TheaterClient</last-edited>
+          <last-edited>Web|TheaterClient</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

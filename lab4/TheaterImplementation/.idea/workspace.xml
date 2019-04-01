@@ -7,26 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2607f3f1-a784-49e5-bb3e-78af44552390" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/artifacts/TeatrWar_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/artifacts/TheaterWar_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/libraries/Mojarra_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/libraries/Mojarra_2_2_1__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TeatrWar.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TheaterImplemetation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TheatrWar/TheaterWar.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TheatrWar/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Teatr/TheatrWar/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PoolTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PoolTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterClient/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/domain/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/domain/Seat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/SeatRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/SeatRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/service/PlaceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TheaterImplementation_ejb_exploded.rar/soa/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../theater/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../theater/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -196,6 +178,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,7 +205,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,18 +318,19 @@
       <workItem from="1553784991493" duration="1195000" />
       <workItem from="1553962202966" duration="87000" />
       <workItem from="1553966422211" duration="1554000" />
-      <workItem from="1553971137936" duration="255000" />
+      <workItem from="1553971137936" duration="624000" />
+      <workItem from="1553971837019" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16792000" />
+    <option name="totallyTimeSpent" value="17180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-211" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21332519" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21577017" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
