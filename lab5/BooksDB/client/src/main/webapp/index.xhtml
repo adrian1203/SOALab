@@ -12,5 +12,56 @@
 <h:body>
    <h2>Aby przejść do zakupu miejsc w teatrze należy się zalogować</h2>
    <h3>LOGOWANIE</h3>
+
+   <h:form>
+      <h:dataTable value="#{BookBeen.bookServiceInterface.getAll()}"  var="book"
+                   border="1" cellpadding="7px">
+
+         <h:column>
+            <f:facet name="header">Imie <br></br>
+            </f:facet>
+            #{book.firstName}
+         </h:column>
+         <h:column>
+            <f:facet name="header">Nazwisko</f:facet>
+            #{book.lastName}
+         </h:column>
+         <h:column>
+            <f:facet name="header">Tytuł</f:facet>
+            #{book.title}
+         </h:column>
+         <h:column>
+            <f:facet name="header">ISBN</f:facet>
+            #{book.ISBN}
+         </h:column>
+         <h:column>
+            <f:facet name="header">Rok</f:facet>
+            #{book.year}
+         </h:column>
+         <h:column>
+            <f:facet name="header">Cena</f:facet>
+            #{book.price}
+         </h:column>
+         <h:column>
+            <f:facet name="header"><br></br>
+            </f:facet>
+            <h:commandButton value="Modifkuj" action="#{BookBeen.modify(book)}">
+            </h:commandButton>
+         </h:column>
+         <h:column>
+            <f:facet name="header"><br></br>
+            </f:facet>
+            <h:commandButton value="Usuń">
+               <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteBook(book)}" execute="@this" render="@form"/>
+            </h:commandButton>
+         </h:column>
+
+
+      </h:dataTable>
+
+      <h:commandButton value="Dodaj książkę" action="/book-add.xhtml?faces-redirect=true"/>
+
+   </h:form>
+
 </h:body>
 </html>

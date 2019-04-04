@@ -8,53 +8,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79045575-9520-4ab5-8873-7439d61140cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/artifacts/client_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/artifacts/impl_ejb_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/api/api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/api/src/main/java/InterfaceMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/api/src/main/java/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/src/main/java/Been.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/impl.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/src/main/java/Implementacja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/artifacts/TeatrWar_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/artifacts/TheaterWar_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/libraries/Mojarra_2_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/libraries/Mojarra_2_2_1__2_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/Teatr.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/TeatrWar.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/TheaterImplemetation/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/TheaterImplemetation/target/TheaterImplemetation-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/TheaterImplemetation/target/TheaterImplemetation-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/TheatrWar/TheaterWar.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/TheatrWar/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/TheatrWar/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/TheatrWar/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/TheatrWar/src/main/webapp/index.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Teatr/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab4/TheaterClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/TheaterClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab4/TheaterImplementation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/TheaterImplementation/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/api/src/main/java/BookInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/api/src/main/java/BookServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/src/main/java/BookBeen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/src/main/webapp/book-add.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/src/main/webapp/book-modify.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/src/main/java/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/src/main/java/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/src/main/java/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/api/src/main/java/InterfaceMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/api/target/classes/InterfaceMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/client/src/main/java/Been.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/client/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/client/target/classes/Been.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT/WEB-INF/classes/Been.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT/WEB-INF/lib/api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT/WEB-INF/lib/api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/impl/impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/impl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/impl/src/main/java/Implementacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/src/main/java/Implementacja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/classes/Implementacja.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/classes/Implementacja.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT/WEB-INF/classes/Implementacja.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT/WEB-INF/classes/Implementacja.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT/WEB-INF/lib/api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT/WEB-INF/lib/api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theater-client/target/theater-client/WEB-INF/lib/theater-implementation-1.0-SNAPSHOT-client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/theater-client/target/theater-client/WEB-INF/lib/theater-implementation-1.0-SNAPSHOT-client.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theater-implementation/src/main/java/pl/agh/kis/soa/service/TheaterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/theater-implementation/src/main/java/pl/agh/kis/soa/service/TheaterManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theater-implementation/target/theater-implementation-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/theater-implementation/target/theater-implementation-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/theater-client/target/" />
     <ignored path="$PROJECT_DIR$/theater-implementation/target/" />
@@ -68,19 +50,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theater-client/pom.xml">
+        <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
+            <state relative-caret-position="510">
+              <caret line="30" column="91" lean-forward="true" selection-start-line="30" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/index.xhtml">
+        <entry file="file://$PROJECT_DIR$/theater-client/src/main/java/pl/agh/kis/soa/TheaterBeen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="8" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="306">
+              <caret line="82" column="37" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -89,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/theater-implementation/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="27" column="35" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="27" selection-end-column="35" />
+              <caret line="27" column="35" selection-start-line="16" selection-start-column="8" selection-end-line="27" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -98,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/theater-implementation/src/main/java/pl/agh/kis/soa/service/TheaterManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <caret line="29" column="30" selection-start-line="29" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -117,7 +99,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -141,9 +123,13 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/rezerwacja.xhtml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="59" column="59" lean-forward="true" selection-start-line="59" selection-end-line="60" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -158,11 +144,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2301" />
-    <option name="y" value="-203" />
-    <option name="width" value="752" />
-    <option name="height" value="1017" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1358" />
+    <option name="y" value="-211" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -170,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -202,6 +189,23 @@
               <item name="theater-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theater" type="462c0819:PsiDirectoryNode" />
+              <item name="theater-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="soa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theater" type="462c0819:PsiDirectoryNode" />
+              <item name="theater-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,11 +222,50 @@
               <item name="theater" type="462c0819:PsiDirectoryNode" />
               <item name="theater-implementation" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="theater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theater" type="462c0819:PsiDirectoryNode" />
+              <item name="theater-implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theater" type="462c0819:PsiDirectoryNode" />
+              <item name="theater-implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theater" type="462c0819:PsiDirectoryNode" />
+              <item name="theater-implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theater" type="462c0819:PsiDirectoryNode" />
+              <item name="theater-implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="soa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="theater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="theater" type="462c0819:PsiDirectoryNode" />
+              <item name="theater-implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="soa" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,16 +421,18 @@
       <workItem from="1554063415314" duration="111000" />
       <workItem from="1554098915220" duration="2211000" />
       <workItem from="1554151138588" duration="2011000" />
+      <workItem from="1554228441466" duration="5620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5689000" />
+    <option name="totallyTimeSpent" value="11309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2301" y="-203" width="752" height="1017" extended-state="0" />
+    <frame x="1358" y="-211" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26878613" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16870415" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -432,24 +477,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/WEB-INF/faces-config.xml">
+    <entry file="file://$PROJECT_DIR$/theater-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        <state relative-caret-position="476">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/podsumowanie.xhtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/rezerwacja.xhtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theater-implementation/src/main/java/pl/agh/kis/soa/service/TheaterManager.java">
+    <entry file="file://$PROJECT_DIR$/theater-implementation/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="459">
+          <caret line="27" column="35" selection-start-line="16" selection-start-column="8" selection-end-line="27" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -463,31 +501,49 @@
     <entry file="file://$PROJECT_DIR$/theater-client/theater-client.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/theater-implementation/pom.xml">
+    <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/WEB-INF/faces-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="27" selection-end-column="35" />
+        <state relative-caret-position="510">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theater-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="8" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theater-implementation/src/main/java/pl/agh/kis/soa/service/TheaterManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="29" column="30" selection-start-line="29" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theater-client/src/main/java/pl/agh/kis/soa/TheaterBeen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="82" column="37" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="91" lean-forward="true" selection-start-line="30" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/podsumowanie.xhtml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theater-client/src/main/webapp/rezerwacja.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="59" column="59" lean-forward="true" selection-start-line="59" selection-end-line="60" />
         </state>
       </provider>
     </entry>
