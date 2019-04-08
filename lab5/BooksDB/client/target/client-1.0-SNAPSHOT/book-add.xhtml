@@ -14,7 +14,7 @@
         <h:panelGrid columns="3">
 
             <h:outputText value="Imie: "/>
-            <h:inputText id="name" value="#{BookBeen.title}" binding="#{firstname}" />
+            <h:inputText id="name"  binding="#{firstname}" />
         </h:panelGrid>
         <h:panelGrid columns="3">
 
@@ -28,22 +28,24 @@
             <h:inputText  id="title" binding="#{title}" />
         </h:panelGrid>
         <h:panelGrid columns="3">
-
-
             <h:outputText value="ISBN"/>
-            <h:inputText  id="ISBN" binding="#{isbn}" />
+            <h:inputText  id="ISBN" binding="#{isbn}" rendered="true" requiredMessage="Wprowadź wartoś ISBN"/>
         </h:panelGrid>
         <h:panelGrid columns="3">
 
         <h:outputText value="Rok"/>
-            <h:inputText  id="year" binding="#{year}" >
-
+            <h:inputText  id="year" binding="#{year}"  validatorMessage="Wprowadź poprawną datę!!!" >
+                <f:convertNumber integerOnly="true" type="number" />
+                <f:validateLongRange minimum="0" maximum="2019"/>
             </h:inputText>
         </h:panelGrid>
         <h:panelGrid columns="3">
 
         <h:outputText value="Cena"/>
-            <h:inputText  id="price" binding="#{price}" ></h:inputText>
+            <h:inputText  id="price" binding="#{price}" validatorMessage="Wprowadź poprawną cenę ksiązki" >
+                <f:convertNumber integerOnly="true" type="number" />
+                <f:validateLongRange minimum="0" maximum="2019"/>
+            </h:inputText>
 
         </h:panelGrid>
 

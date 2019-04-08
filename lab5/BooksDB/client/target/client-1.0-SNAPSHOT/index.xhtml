@@ -14,8 +14,6 @@
    <h3>LOGOWANIE</h3>
 
    <h:form>
-      <h:commandButton value="Wyczyść filtr" action="#{BookBeen.foo()}"></h:commandButton>
-
       <h:dataTable value="#{BookBeen.bookServiceInterface.getAll()}"  var="book"
                    border="1" cellpadding="7px">
 
@@ -57,10 +55,7 @@
                <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteBook(book)}" execute="@this" render="@form"/>
             </h:commandButton>
          </h:column>
-
-
       </h:dataTable>
-
       <h:commandButton value="Dodaj książkę" action="/book-add.xhtml?faces-redirect=true"/>
 
    </h:form>

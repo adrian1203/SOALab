@@ -55,10 +55,7 @@
                <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteBook(book)}" execute="@this" render="@form"/>
             </h:commandButton>
          </h:column>
-
-
       </h:dataTable>
-
       <h:commandButton value="Dodaj książkę" action="/book-add.xhtml?faces-redirect=true"/>
 
    </h:form>
