@@ -3,7 +3,6 @@ import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import java.io.Serializable;
-import java.util.List;
 
 
 @SessionScoped
@@ -21,7 +20,7 @@ public class BookBeen implements Serializable {
 
 
     @EJB(lookup = "java:global/impl-1.0-SNAPSHOT/BookService")
-    private BookServiceInterface bookServiceInterface;
+    private LibraryServiceInterface bookServiceInterface;
 
 
     public Object getSelectedBook() {
@@ -31,18 +30,12 @@ public class BookBeen implements Serializable {
     public void setSelectedBook(BookInterface selectedBook) {
         this.selectedBook = selectedBook;
     }
-
-    public void foo() {
-
-
-        bookServiceInterface.getAll();
-    }
-
-    public BookServiceInterface getBookServiceInterface() {
+    
+    public LibraryServiceInterface getBookServiceInterface() {
         return bookServiceInterface;
     }
 
-    public void setBookServiceInterface(BookServiceInterface bookServiceInterface) {
+    public void setBookServiceInterface(LibraryServiceInterface bookServiceInterface) {
         this.bookServiceInterface = bookServiceInterface;
     }
 

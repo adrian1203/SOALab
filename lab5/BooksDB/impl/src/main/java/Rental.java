@@ -22,7 +22,7 @@ public class Rental {
     private Date rentaDate;
 
     @Column(name = "return_date")
-    private String returnDate;
+    private Date returnDate;
 
     @ManyToOne
     private User user;
