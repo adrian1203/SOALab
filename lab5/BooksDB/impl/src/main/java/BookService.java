@@ -42,14 +42,14 @@ public class BookService implements BookServiceInterface {
     }
 
     public void createBook(String firstName, String lastName, String title, String ISBN, Integer year, Double price) {
-        Book book=new Book();
-        book.setFirstName(firstName);
-        book.setLastName(lastName);
-        book.setTitle(title);
-        book.setISBN(ISBN);
-        book.setYear(year);
-        book.setPrice(price);
-        bookRepository.createBook(book);
+//        Book book=new Book();
+//        book.setFirstName(firstName);
+//        book.setLastName(lastName);
+//        book.setTitle(title);
+//        book.setISBN(ISBN);
+//        book.setYear(year);
+//        book.setPrice(price);
+//        bookRepository.createBook(book);
     }
 
 

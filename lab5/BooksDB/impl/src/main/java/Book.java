@@ -7,6 +7,7 @@ import javax.ejb.Remote;
 import javax.persistence.*;
 
 import java.io.Serializable;
+import java.util.Set;
 
 import static javax.persistence.GenerationType.TABLE;
 
@@ -21,23 +22,15 @@ public class Book implements BookInterface, Serializable {
     @GeneratedValue(strategy=TABLE, generator="CUST_GEN")
     private Long id;
 
-    @Column(name = "first_name")
-    private String firstName;
-
-    @Column(name = "last_name")
-    private String lastName;
 
     @Column(name = "title")
     private String title;
 
-    @Column(name = "ISBN")
-    private String ISBN;
+   @ManyToOne
+   private Author author;
 
-    @Column(name = "year")
-    private Integer year;
-
-    @Column(name = "price")
-    private Double price;
+   @OneToMany
+   private Set<Rental> rentalSet;
 
 
     public Book() {
