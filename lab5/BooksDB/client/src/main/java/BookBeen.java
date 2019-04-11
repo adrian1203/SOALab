@@ -3,6 +3,11 @@ import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 
 
 @SessionScoped
@@ -17,9 +22,38 @@ public class BookBeen implements Serializable {
     private Integer year;
     private Double price;
     private Object selectedBook;
+    private Object selectedAuthorToBook;
+    private Object selectedUserToRental;
+    private Object selectedBookToRental;
+
+    private Date start;
+    private Date end;
 
 
-    @EJB(lookup = "java:global/impl-1.0-SNAPSHOT/BookService")
+    private Date startDateFiltered;
+    private Date endDateFiltered;
+    private String authorFiltered;
+
+
+
+
+
+
+    private String selectedAtohorIdToBook;
+
+    public String getSelectedAtohorIdToBook() {
+        return selectedAtohorIdToBook;
+    }
+
+    public void setSelectedAtohorIdToBook(String selectedAtohorIdToBook) {
+        this.selectedAtohorIdToBook = selectedAtohorIdToBook;
+    }
+
+    public BookBeen() {
+        selectedAuthorToBook = new Object();
+    }
+
+    @EJB(lookup = "java:global/impl-1.0-SNAPSHOT/LibraryService")
     private LibraryServiceInterface bookServiceInterface;
 
 
@@ -30,7 +64,7 @@ public class BookBeen implements Serializable {
     public void setSelectedBook(BookInterface selectedBook) {
         this.selectedBook = selectedBook;
     }
-    
+
     public LibraryServiceInterface getBookServiceInterface() {
         return bookServiceInterface;
     }
@@ -40,12 +74,40 @@ public class BookBeen implements Serializable {
     }
 
 
-    public String createBook(String firstName, String lastName, String title, String ISBN, String year, String price) {
+    public String createBook(String firstName) {
 
-        this.bookServiceInterface.createBook(firstName, lastName, title, ISBN, Integer.parseInt(year), Double.parseDouble(price));
+        this.bookServiceInterface.createBook(firstName,selectedAuthorToBook);
 
         return "/index.xhtml?faces-redirect=true";
     }
+
+    public String createUser(String firstName, String lastname) {
+
+        this.bookServiceInterface.createUser(firstName, lastname);
+
+        return "/index.xhtml?faces-redirect=true";
+    }
+
+    public String createAuthor(String firstName, String lastname) {
+
+        this.bookServiceInterface.createAuthor(firstName, lastname);
+
+        return "/index.xhtml?faces-redirect=true";
+    }
+
+    public String createRental(String startDate, String returnDate) throws ParseException {
+
+//        DateFormat format = new SimpleDateFormat("EEE MMM dd yyyy HH:mm:ss");
+//
+//        Date start= format.parse(startDate);
+//
+//        Date endDate= format.parse(returnDate);
+        this.bookServiceInterface.createRental(selectedBookToRental, selectedUserToRental, this.start,this.end);
+
+        return "/index.xhtml?faces-redirect=true";
+    }
+
+
 
     public String modify(Object book){
         selectedBook=new Object() {};
@@ -56,8 +118,42 @@ public class BookBeen implements Serializable {
     public String update(){
 
         this.bookServiceInterface.updateBook( selectedBook);
-        return "/index.xhtml?faces-redirect=true";
+        return "/index.xhtml";
 
+    }
+
+
+//    public List<Object>getFilterdUser(){
+//
+//       return  (O)this.bookServiceInterface.getFilteredUseByAuthorAndRentalDateBookTitle(this.authorFiltered, null, startDateFiltered, endDateFiltered)
+//    }
+
+    public void setSelectedBook(Object selectedBook) {
+        this.selectedBook = selectedBook;
+    }
+
+    public Object getSelectedAuthorToBook() {
+        return selectedAuthorToBook;
+    }
+
+    public void setSelectedAuthorToBook(Object selectedAuthorToBook) {
+        this.selectedAuthorToBook = selectedAuthorToBook;
+    }
+
+    public Object getSelectedUserToRental() {
+        return selectedUserToRental;
+    }
+
+    public void setSelectedUserToRental(Object selectedUserToRental) {
+        this.selectedUserToRental = selectedUserToRental;
+    }
+
+    public Object getSelectedBookToRental() {
+        return selectedBookToRental;
+    }
+
+    public void setSelectedBookToRental(Object selectedBookToRental) {
+        this.selectedBookToRental = selectedBookToRental;
     }
 
     public String getFirstname() {
@@ -104,7 +200,47 @@ public class BookBeen implements Serializable {
         return price;
     }
 
+    public Date getStartDateFiltered() {
+        return startDateFiltered;
+    }
+
+    public void setStartDateFiltered(Date startDateFiltered) {
+        this.startDateFiltered = startDateFiltered;
+    }
+
+    public Date getEndDateFiltered() {
+        return endDateFiltered;
+    }
+
+    public void setEndDateFiltered(Date endDateFiltered) {
+        this.endDateFiltered = endDateFiltered;
+    }
+
+    public String getAuthorFiltered() {
+        return authorFiltered;
+    }
+
+    public void setAuthorFiltered(String authorFiltered) {
+        this.authorFiltered = authorFiltered;
+    }
+
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Date getEnd() {
+        return end;
+    }
+
+    public void setEnd(Date end) {
+        this.end = end;
+    }
+
+    public Date getStart() {
+        return start;
+    }
+
+    public void setStart(Date start) {
+        this.start = start;
     }
 }

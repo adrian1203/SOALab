@@ -10,8 +10,11 @@ import java.util.List;
 public class LibraryService implements LibraryServiceInterface {
 
 
-    @Inject
     private LibraryRepository libraryRepository;
+
+    public LibraryService(){
+        this.libraryRepository = new LibraryRepository();
+    }
 
 
     public List<BookInterface> getAllBooks() {
@@ -77,17 +80,19 @@ public class LibraryService implements LibraryServiceInterface {
     }
 
     public void createBook(String title, Object author) {
+
+
         Book book = new Book();
         book.setTitle(title);
-        book.setAuthor((Author) author);
+        book.setAuthor(this.libraryRepository.findAuthorById(Long.parseLong((String)author)));
         this.libraryRepository.createBook(book);
 
     }
 
     public void createRental(Object book, Object user, Date rentalDate, Date returDate) {
         Rental rental = new Rental();
-        rental.setBook((Book) book);
-        rental.setUser((User) user);
+        rental.setBook(this.libraryRepository.findBookById(Long.parseLong((String)book)));
+        rental.setUser(this.libraryRepository.findUserById(Long.parseLong((String)user)));
         rental.setRentaDate(rentalDate);
         rental.setReturnDate(returDate);
         this.libraryRepository.createRental(rental);
@@ -109,11 +114,13 @@ public class LibraryService implements LibraryServiceInterface {
     }
 
     public List<UserInterface> getFilteredUseByAuthorAndRentalDateBookTitle(String AuthorlastName, String bookTitle, Date startDate, Date returnDate) {
-        return null;
+       return  libraryRepository.getFilteredUseByAuthorAndRentalDateBookTitle(AuthorlastName, bookTitle, startDate, returnDate);
     }
 
     public List<AuthorInterface> getFilteredAuthorByUser(String firstName, String LastName) {
-        return null;
+
+
+        return libraryRepository.getFilteredAuthorByUser(firstName, LastName);
     }
 
     public List<AuthorInterface> getFilteredUserByBook(Object book) {

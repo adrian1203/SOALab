@@ -4,6 +4,7 @@ import lombok.Setter;
 import javax.ejb.Remote;
 import javax.persistence.*;
 
+import java.io.Serializable;
 import java.util.Set;
 
 import static javax.persistence.GenerationType.TABLE;
@@ -11,8 +12,8 @@ import static javax.persistence.GenerationType.TABLE;
 @Getter
 @Setter
 @Entity
-@Table(name = "user")
-public class User {
+@Table(name = "user_table")
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy=TABLE, generator="CUST_GEN")

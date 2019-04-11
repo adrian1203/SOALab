@@ -11,48 +11,23 @@
 <h:body>
     <h2>Modifikuj książkę</h2>
     <h:form>
-        <h:panelGrid columns="3">
-
-            <h:outputText value="Imie: "/>
-            <h:inputText id="name" value="#{BookBeen.selectedBook.firstName}" />
-
-        </h:panelGrid>
-        <h:panelGrid columns="3">
-
-            <h:outputText value="Nazwisko"/>
-            <h:inputText id="lastname" value="#{BookBeen.selectedBook.lastName}" />
-        </h:panelGrid>
 
         <h:panelGrid columns="3">
 
             <h:outputText value="Tytuł"/>
-            <h:inputText id="title" value="#{BookBeen.selectedBook.title}" />
+            <h:inputText id="title" value="#{BookBeen.selectedBook.title}"/>
         </h:panelGrid>
 
         <h:panelGrid columns="3">
 
-            <h:outputText value="ISBN"/>
-            <h:inputText id="ISBN" value="#{BookBeen.selectedBook.ISBN}" required="true"/>
+            <h:outputText value="Autor"/>
+            <h:inputText id="ISBN" value="#{BookBeen.selectedBook.author.lastName}" required="true"/>
         </h:panelGrid>
+        <h:selectOneMenu value="#{BookBeen.selectedBook.author}">
+            <f:selectItems value="#{BookBeen.bookServiceInterface.getAllAuthor()}" var="author"
+                           itemLabel="#{author.lastName}" itemValue="#{author}"/>
+        </h:selectOneMenu>
 
-        <h:panelGrid columns="3">
-
-            <h:outputText value="Rok"/>
-            <h:inputText id="year" value="#{BookBeen.selectedBook.year}" validatorMessage="Wprowadź poprawny rok" >
-                <f:convertNumber integerOnly="true" type="number" />
-                <f:validateLongRange minimum="0" maximum="2019"/>
-            </h:inputText>
-        </h:panelGrid>
-
-        <h:panelGrid columns="3">
-
-            <h:outputText value="Cena"/>
-            <h:inputText id="price" value="#{BookBeen.selectedBook.price}" validatorMessage="Wprowadź poprawne dane" >
-                <f:convertNumber  type="number" />
-                <f:validateLongRange  minimum="0"/>
-            </h:inputText>
-
-        </h:panelGrid>
 
         <h:commandButton value="Zmodifikuj" action="#{BookBeen.update()}"/>
 

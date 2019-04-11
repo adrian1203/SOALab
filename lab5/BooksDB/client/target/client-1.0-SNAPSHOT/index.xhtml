@@ -6,59 +6,211 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
-   <title>System sprzedaży miejsc w Teaatrze</title>
+    <title>System sprzedaży miejsc w Teaatrze</title>
 </h:head>
 
 <h:body>
-   <h2>Aby przejść do zakupu miejsc w teatrze należy się zalogować</h2>
-   <h3>LOGOWANIE</h3>
 
-   <h:form>
-      <h:dataTable value="#{BookBeen.bookServiceInterface.getAll()}"  var="book"
-                   border="1" cellpadding="7px">
 
-         <h:column>
-            <f:facet name="header">Imie <br></br>
-            </f:facet>
-            #{book.firstName}
-         </h:column>
-         <h:column>
-            <f:facet name="header">Nazwisko</f:facet>
-            #{book.lastName}
-         </h:column>
-         <h:column>
-            <f:facet name="header">Tytuł</f:facet>
-            #{book.title}
-         </h:column>
-         <h:column>
-            <f:facet name="header">ISBN</f:facet>
-            #{book.ISBN}
-         </h:column>
-         <h:column>
-            <f:facet name="header">Rok</f:facet>
-            #{book.year}
-         </h:column>
-         <h:column>
-            <f:facet name="header">Cena</f:facet>
-            #{book.price}
-         </h:column>
-         <h:column>
-            <f:facet name="header"><br></br>
-            </f:facet>
-            <h:commandButton value="Modifkuj" action="#{BookBeen.modify(book)}">
-            </h:commandButton>
-         </h:column>
-         <h:column>
-            <f:facet name="header"><br></br>
-            </f:facet>
-            <h:commandButton value="Usuń">
-               <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteBook(book)}" execute="@this" render="@form"/>
-            </h:commandButton>
-         </h:column>
-      </h:dataTable>
-      <h:commandButton value="Dodaj książkę" action="/book-add.xhtml?faces-redirect=true"/>
+    <h2>Ksiązki</h2>
+    <h:form>
+        <h:dataTable value="#{BookBeen.bookServiceInterface.getAllBooks()}" var="book"
+                     border="1" cellpadding="7px">
 
-   </h:form>
+
+            <h:column>
+                <f:facet name="header">Tytuł</f:facet>
+                #{book.title}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Author Imie</f:facet>
+                #{book.author.firstName}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Author Nazwisko</f:facet>
+                #{book.author.lastName}
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Modifkuj" action="#{BookBeen.modify(book)}">
+                </h:commandButton>
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Usuń">
+                    <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteBook(book)}" execute="@this"
+                            render="@form"/>
+                </h:commandButton>
+            </h:column>
+        </h:dataTable>
+        <h:commandButton value="Dodaj książkę" action="/book-add.xhtml?faces-redirect=true"/>
+
+    </h:form>
+    <h2>Autorzy</h2>
+
+
+    <h:form>
+        <h:dataTable value="#{BookBeen.bookServiceInterface.getAllAuthor()}" var="author"
+                     border="1" cellpadding="7px">
+
+            <h:column>
+                <f:facet name="header">Author Imie</f:facet>
+                #{author.firstName}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Author Nazwisko</f:facet>
+                #{author.lastName}
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Modifkuj" action="#{BookBeen.modify(book)}">
+                </h:commandButton>
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Usuń">
+                    <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteAuthor(author)}"
+                            execute="@this" render="@form"/>
+                </h:commandButton>
+            </h:column>
+        </h:dataTable>
+        <h:commandButton value="Dodaj Autora" action="/author-add.xhtml?faces-redirect=true"/>
+
+    </h:form>
+    <h2>Użytkownicy</h2>
+
+    <h:form>
+        <h:dataTable value="#{BookBeen.bookServiceInterface.getAllUser()}" var="user"
+                     border="1" cellpadding="7px">
+
+            <h:column>
+                <f:facet name="header">Uzytownik Imie</f:facet>
+                #{user.firstName}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Uzytownik Nazwisko</f:facet>
+                #{user.lastName}
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Modifkuj" action="#{BookBeen.modify(user)}">
+                </h:commandButton>
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Usuń">
+                    <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteUser(user)}" execute="@this"
+                            render="@form"/>
+                </h:commandButton>
+            </h:column>
+        </h:dataTable>
+        <h:commandButton value="Dodaj Użytkownika" action="/user-add.xhtml?faces-redirect=true"/>
+
+    </h:form>
+
+
+    <h2>Wypożyczenia</h2>
+
+    <h:form>
+        <h:dataTable value="#{BookBeen.bookServiceInterface.getAllRental()}" var="rental"
+                     border="1" cellpadding="7px">
+
+
+            <h:column>
+            <f:facet name="header">Data wypożyczenia </f:facet>
+            #{rental.rentaDate}
+        </h:column>
+
+            <h:column>
+                <f:facet name="header">Data zwrotu </f:facet>
+                #{rental.returnDate}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Tytuł </f:facet>
+                #{rental.book.title}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Użytkownik Nazwisko</f:facet>
+                #{rental.user.lastName}
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Modifkuj" action="#{BookBeen.modify(rental)}">
+                </h:commandButton>
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Usuń">
+                    <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteRental(rental)}" execute="@this"
+                            render="@form"/>
+                </h:commandButton>
+            </h:column>
+        </h:dataTable>
+        <h:commandButton value="Dodaj wypożyczenia" action="/rental-add.xhtml?faces-redirect=true"/>
+
+    </h:form>
+
+
+    <h:form>
+        <h:outputLabel for="start">Data początkowa</h:outputLabel>
+        <h:inputText value="#{BookBeen.startDateFiltered}" id="start">
+            <f:convertDateTime pattern="yyyy-MM-dd"/>
+
+        </h:inputText>
+
+        <h:outputLabel for="end">Data końcowa</h:outputLabel>
+        <h:inputText value="#{BookBeen.endDateFiltered}" id="end">
+            <f:convertDateTime pattern="yyyy-MM-dd"/>
+
+        </h:inputText>
+
+        <h:outputLabel for="author">Author</h:outputLabel>
+        <h:inputText value="#{BookBeen.authorFiltered}" id="author">
+        </h:inputText>
+
+        <h:commandButton value="Fltruj">
+            <f:ajax event="click"  execute="@this" render="@form"/>
+        </h:commandButton>
+
+        <h:dataTable value="#{BookBeen.bookServiceInterface.getFilteredUseByAuthorAndRentalDateBookTitle(BookBeen.authorFiltered,
+        null,BookBeen.startDateFiltered, BookBeen.endDateFiltered)}" var="user"
+                     border="1" cellpadding="7px">
+
+            <h:column>
+                <f:facet name="header">Uzytownik Imie</f:facet>
+                #{user.firstName}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Uzytownik Nazwisko</f:facet>
+                #{user.lastName}
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Modifkuj" action="#{BookBeen.modify(user)}">
+                </h:commandButton>
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Usuń">
+                    <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteUser(user)}" execute="@this"
+                            render="@form"/>
+                </h:commandButton>
+            </h:column>
+        </h:dataTable>
+
+
+    </h:form>
+
 
 </h:body>
 </html>

@@ -3,6 +3,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+import java.io.Serializable;
 import java.util.Set;
 
 import static javax.persistence.GenerationType.TABLE;
@@ -11,7 +12,7 @@ import static javax.persistence.GenerationType.TABLE;
 @Setter
 @Entity
 @Table(name = "author")
-public class Author {
+public class Author implements Serializable {
 
     @Id
     @GeneratedValue(strategy=TABLE, generator="CUST_GEN")

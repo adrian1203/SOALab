@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xml:lang="en" lang="en">
+<h:head>
+    <title>Dodaj książkę</title>
+</h:head>
+
+<h:body>
+    <h2>Dodaj książkę</h2>
+    <h:form>
+
+        <h:panelGrid columns="3">
+
+            <h:outputText value="Data dodania"/>
+            <h:inputText id="startDate" value="#{BookBeen.start}" >
+                <f:convertDateTime pattern="yyyy-MM-dd"/>
+            </h:inputText>
+        </h:panelGrid>
+
+        <h:panelGrid columns="3">
+
+            <h:outputText value="Data oddania"/>
+            <h:inputText id="returnDate" value="#{BookBeen.end}">
+                <f:convertDateTime pattern="yyyy-MM-dd"/>
+            </h:inputText>
+        </h:panelGrid>
+
+
+        <h:panelGrid columns="3">
+            <h:outputText value="Ksiązka"/>
+
+            <h:selectOneMenu value="#{BookBeen.selectedBookToRental}">
+                <f:selectItems value="#{BookBeen.bookServiceInterface.getAllBooks()}" var="book"
+                               itemValue="#{book.id}" itemLabel="#{book.title}"/>
+            </h:selectOneMenu>
+        </h:panelGrid>
+
+        <h:panelGrid columns="3">
+            <h:outputText value="Użytkownik"/>
+
+            <h:selectOneMenu value="#{BookBeen.selectedUserToRental}">
+                <f:selectItems value="#{BookBeen.bookServiceInterface.getAllUser()}" var="user"
+                               itemValue="#{user.id}" itemLabel="#{user.lastName}"/>
+            </h:selectOneMenu>
+        </h:panelGrid>
+
+
+        <h:commandButton value="Dodaj" onclick="true"
+                         action="#{BookBeen.createRental(startDate.value, returnDate.value)}"/>
+        <h:commandButton value="Wroć"
+                         action="/index.xhtml"/>
+    </h:form>
+</h:body>
+</html>

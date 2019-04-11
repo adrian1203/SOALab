@@ -11,47 +11,28 @@
 <h:body>
     <h2>Dodaj książkę</h2>
     <h:form>
-        <h:panelGrid columns="3">
-
-            <h:outputText value="Imie: "/>
-            <h:inputText id="name"  binding="#{firstname}" />
-        </h:panelGrid>
-        <h:panelGrid columns="3">
-
-        <h:outputText value="Nazwisko"/>
-            <h:inputText  id="lastname" binding="#{lastname}" />
-        </h:panelGrid>
 
         <h:panelGrid columns="3">
 
-        <h:outputText value="Tytuł"/>
-            <h:inputText  id="title" binding="#{title}" />
+            <h:outputText value="Tytuł"/>
+            <h:inputText id="title" binding="#{title}"/>
         </h:panelGrid>
+
+
         <h:panelGrid columns="3">
-            <h:outputText value="ISBN"/>
-            <h:inputText  id="ISBN" binding="#{isbn}" rendered="true" requiredMessage="Wprowadź wartoś ISBN"/>
-        </h:panelGrid>
-        <h:panelGrid columns="3">
+            <h:outputText value="Autor"/>
 
-        <h:outputText value="Rok"/>
-            <h:inputText  id="year" binding="#{year}"  validatorMessage="Wprowadź poprawną datę!!!" >
-                <f:convertNumber integerOnly="true" type="number" />
-                <f:validateLongRange minimum="0" maximum="2019"/>
-            </h:inputText>
-        </h:panelGrid>
-        <h:panelGrid columns="3">
-
-        <h:outputText value="Cena"/>
-            <h:inputText  id="price" binding="#{price}" validatorMessage="Wprowadź poprawną cenę ksiązki" >
-                <f:convertNumber integerOnly="true" type="number" />
-                <f:validateLongRange minimum="0" maximum="2019"/>
-            </h:inputText>
-
+            <h:selectOneMenu value="#{BookBeen.selectedAuthorToBook}">
+                <f:selectItems value="#{BookBeen.bookServiceInterface.getAllAuthor()}" var="author"
+                               itemValue="#{author.id}" itemLabel="#{author.lastName}"/>
+            </h:selectOneMenu>
         </h:panelGrid>
 
 
-        <h:commandButton value="Dodaj"
-                         action="#{BookBeen.createBook(firstname.value,lastname.value,title.value,isbn.value,year.value, price.value)}"/>
+        <h:commandButton value="Dodaj" onclick="true"
+                         action="#{BookBeen.createBook(title.value)}"/>
+        <h:commandButton value="Wroć"
+                         action="/index.xhtml"/>
     </h:form>
 </h:body>
 </html>
