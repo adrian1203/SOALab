@@ -6,8 +6,10 @@ import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Logger;
 
 
 @SessionScoped
@@ -30,14 +32,21 @@ public class BookBeen implements Serializable {
     private Date end;
 
 
+    Logger logger = Logger.getLogger(BookBeen.class.getName());
+
     private Date startDateFiltered;
     private Date endDateFiltered;
     private String authorFiltered;
 
+    private  List<Object> FilteredUser;
 
+    public List<Object> getFilteredUser() {
+        return FilteredUser;
+    }
 
-
-
+    public void setFilteredUser(List<Object> filteredUser) {
+        FilteredUser = filteredUser;
+    }
 
     private String selectedAtohorIdToBook;
 
@@ -123,10 +132,16 @@ public class BookBeen implements Serializable {
     }
 
 
-//    public List<Object>getFilterdUser(){
-//
-//       return  (O)this.bookServiceInterface.getFilteredUseByAuthorAndRentalDateBookTitle(this.authorFiltered, null, startDateFiltered, endDateFiltered)
-//    }
+    public void filterdUser(){
+        FilteredUser = new ArrayList<Object>();
+        logger.info(authorFiltered);
+       this.FilteredUser= this.bookServiceInterface.getFilteredUseByAuthorAndRentalDateBookTitle(this.authorFiltered, null, startDateFiltered, endDateFiltered);
+    }
+
+    public void filteredUserByBook(Object book){
+
+        this.bookServiceInterface.getFilteredUserByBook(book);
+    }
 
     public void setSelectedBook(Object selectedBook) {
         this.selectedBook = selectedBook;

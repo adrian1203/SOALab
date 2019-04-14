@@ -38,11 +38,11 @@ public interface LibraryServiceInterface {
 
     public void createBook(String firstName, String lastName, String title, String ISBN, Integer year, Double price);
 
-    public  List<UserInterface> getFilteredUseByAuthorAndRentalDateBookTitle(String AuthorlastName, String bookTitle, Date startDate, Date returnDate);
+    public  List<Object> getFilteredUseByAuthorAndRentalDateBookTitle(String AuthorlastName, String bookTitle, Date startDate, Date returnDate);
 
-    public List<AuthorInterface> getFilteredAuthorByUser(String firstName, String LastName);
+    public List<Object> getFilteredAuthorByUser(String firstName, String LastName);
 
-    public List<AuthorInterface> getFilteredUserByBook(Object book);
+    public List<Object> getFilteredUserByBook(Object book);
 
     public AuthorInterface getMostPopulatAuthor();
 

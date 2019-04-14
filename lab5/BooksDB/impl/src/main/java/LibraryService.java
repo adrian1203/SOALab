@@ -3,12 +3,14 @@ import javax.ejb.Stateful;
 import javax.inject.Inject;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Logger;
 
 
 @Stateful
 @Remote(LibraryServiceInterface.class)
 public class LibraryService implements LibraryServiceInterface {
 
+    Logger logger = Logger.getLogger(LibraryService.class.getName());
 
     private LibraryRepository libraryRepository;
 
@@ -113,18 +115,20 @@ public class LibraryService implements LibraryServiceInterface {
 
     }
 
-    public List<UserInterface> getFilteredUseByAuthorAndRentalDateBookTitle(String AuthorlastName, String bookTitle, Date startDate, Date returnDate) {
-       return  libraryRepository.getFilteredUseByAuthorAndRentalDateBookTitle(AuthorlastName, bookTitle, startDate, returnDate);
+    public List<Object> getFilteredUseByAuthorAndRentalDateBookTitle(String AuthorlastName, String bookTitle, Date startDate, Date returnDate) {
+        return  libraryRepository.getFilteredUseByAuthorAndRentalDateBookTitle(AuthorlastName, bookTitle, startDate, returnDate);
     }
 
-    public List<AuthorInterface> getFilteredAuthorByUser(String firstName, String LastName) {
+    public List<Object> getFilteredAuthorByUser(String firstName, String LastName) {
 
 
         return libraryRepository.getFilteredAuthorByUser(firstName, LastName);
     }
 
-    public List<AuthorInterface> getFilteredUserByBook(Object book) {
-        return null;
+    public List<Object> getFilteredUserByBook(Object book) {
+
+
+        return libraryRepository.getFilteredUserByBook(book);
     }
 
     public AuthorInterface getMostPopulatAuthor() {

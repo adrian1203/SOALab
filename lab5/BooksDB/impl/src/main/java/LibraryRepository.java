@@ -1,3 +1,5 @@
+import clojure.lang.Obj;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -131,42 +133,53 @@ public class LibraryRepository {
         return  q.getResultList();
     }
 
-    public List<UserInterface> getFilteredUseByAuthorAndRentalDateBookTitle(String AuthorlastName, String bookTitle, Date startDate, Date returnDate) {
-        Query query = em.createQuery(" SELECT user from User as user join user.rentalSet  as rental join" +
-                " rental.book as book join book.author as author where author.lastName = :AuthorlastName" +
-                " and rental.rentaDate > :startDate and rental.returnDate <:returnDate ");
+    public List<Object> getFilteredUseByAuthorAndRentalDateBookTitle(String AuthorlastName, String bookTitle, Date startDate, Date returnDate) {
+        logger.info(AuthorlastName);
+        if(startDate!=null && returnDate!=null){
+            logger.info(startDate.toString());
+            logger.info(returnDate.toString());
+        }
+
+
+
+        Query query = em.createQuery(" SELECT user from User  user join user.rentalSet   rental join" +
+                " rental.book  book join book.author  author where author.lastName = :AuthorlastName" +
+                " and rental.rentaDate > :startDate and rental.returnDate < :returnDate ");
+
 
         query.setParameter("AuthorlastName", AuthorlastName);
         query.setParameter("startDate", startDate);
         query.setParameter("returnDate", returnDate);
 
+
+        logger.info(   String.valueOf(query.getResultList().size()));
         return query.getResultList();
 
 
 
     }
 
-    public List<AuthorInterface> getFilteredAuthorByUser(String firstName, String LastName) {
-    Query query = em.createQuery(" SELECT author from Author as author join author.bookSet  as book join" +
-            " book.rentalSet as rental join rental.user as user where user.firstName = :firstName and user.lastName =:LastName ");
+    public List<Object> getFilteredAuthorByUser(String firstName, String LastName) {
+    Query query = em.createQuery(" SELECT author from Author  author join author.bookSet   book join" +
+            " book.rentalSet  rental join rental.user  user where user.firstName = :firstName and user.lastName =:LastName ");
 
         query.setParameter("LastName", LastName);
         query.setParameter("firstName", firstName);
+        logger.info(   String.valueOf(query.getResultList().size()));
         return query.getResultList();
 
     }
 
-    public List<AuthorInterface> getFilteredUserByBook(Object book){
+    public List<Object> getFilteredUserByBook(Object book){
 
-//    Query query = em.createQuery(" SELECT user from User as user join user.rentalSet  as rental join" +
-//            " rental.book as book where rental.rentaDate > :startDate and rental.returnDate <:returnDate ");
-//
-//        query.setParameter("AuthorlastName", AuthorlastName);
-//        query.setParameter("startDate", startDate);
-//        query.setParameter("returnDate", returnDate);
-//
-//        return query.getResultList();
-    return null;
+    Query query = em.createQuery(" SELECT user from User as user join user.rentalSet   rental join" +
+            " rental.book  book where book = :book");
+
+
+    query.setParameter("book",book);
+        logger.info(   String.valueOf(query.getResultList().size()));
+
+        return query.getResultList();
     }
 
     public AuthorInterface getMostPopulatAuthor() {

@@ -6,7 +6,7 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
-    <title>System sprzedaży miejsc w Teaatrze</title>
+    <title>Biblioteka</title>
 </h:head>
 
 <h:body>
@@ -177,11 +177,12 @@
         </h:inputText>
 
         <h:commandButton value="Fltruj">
-            <f:ajax event="click"  execute="@this" render="@form"/>
+            <f:ajax event="click"  listener="#{BookBeen.filterdUser()}" execute="@this" render="@form"/>
         </h:commandButton>
 
-        <h:dataTable value="#{BookBeen.bookServiceInterface.getFilteredUseByAuthorAndRentalDateBookTitle(BookBeen.authorFiltered,
-        null,BookBeen.startDateFiltered, BookBeen.endDateFiltered)}" var="user"
+        <h2>Przefiltrowanie użytkownicy</h2>
+
+        <h:dataTable value="#{BookBeen.filteredUser}" var="user"
                      border="1" cellpadding="7px">
 
             <h:column>

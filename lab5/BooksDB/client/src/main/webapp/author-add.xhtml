@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core" xml:lang="en" lang="en">
 <h:head>
-    <title>Dodaj książkę</title>
+    <title>Dodaj autora</title>
 </h:head>
 
 <h:body>
@@ -18,7 +18,7 @@
             <h:inputText  id="firstName" binding="#{firstName}" />
         </h:panelGrid>
 <h:panelGrid>
-        <h:outputText value="Nazwisko"/>
+        <h:outputText for="lastName" value="Nazwisko"/>
         <h:inputText  id="lastName" binding="#{lastName}" />
     </h:panelGrid>
         <h:commandButton value="Dodaj" onclick="true"
