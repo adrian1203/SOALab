@@ -8,31 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da26351-1f8e-4002-ab91-6555eb636016" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/LibraryServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/LibraryServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/LibraryServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/LibraryServiceInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/BookBeen.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/BookBeen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/webapp/author-add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/webapp/author-add.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/webapp/rental-add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/webapp/rental-add.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/webapp/user-add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/webapp/user-add.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/BookBeen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/BookBeen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/BookBeen.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/BookBeen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/WEB-INF/classes/BookBeen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/WEB-INF/classes/BookBeen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/WEB-INF/classes/BookBeen.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/WEB-INF/classes/BookBeen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/WEB-INF/lib/api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/WEB-INF/lib/api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/author-add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/author-add.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impl/src/main/java/LibraryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/impl/src/main/java/LibraryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impl/src/main/java/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/impl/src/main/java/LibraryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impl/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/impl/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impl/target/classes/LibraryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/impl/target/classes/LibraryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impl/target/classes/LibraryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/impl/target/classes/LibraryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impl/target/impl-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/impl/target/impl-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impl/target/impl-1.0-SNAPSHOT/WEB-INF/classes/LibraryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/impl/target/impl-1.0-SNAPSHOT/WEB-INF/classes/LibraryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impl/target/impl-1.0-SNAPSHOT/WEB-INF/classes/LibraryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/impl/target/impl-1.0-SNAPSHOT/WEB-INF/classes/LibraryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impl/target/impl-1.0-SNAPSHOT/WEB-INF/lib/api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/impl/target/impl-1.0-SNAPSHOT/WEB-INF/lib/api-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -49,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/impl/src/main/java/LibraryRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="182" column="5" lean-forward="true" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
+            <state relative-caret-position="2958">
+              <caret line="182" column="5" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/BookBeen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1373">
+            <state relative-caret-position="1989">
               <caret line="142" column="62" selection-start-line="142" selection-start-column="62" selection-end-line="142" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -82,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/impl/src/main/java/LibraryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="127" column="60" lean-forward="true" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
+            <state relative-caret-position="1870">
+              <caret line="127" column="60" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/main/webapp/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="184" column="64" lean-forward="true" selection-start-line="184" selection-start-column="64" selection-end-line="184" selection-end-column="64" />
+            <state relative-caret-position="169">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -157,10 +133,10 @@
         <option value="$PROJECT_DIR$/client/src/main/webapp/book-add.xhtml" />
         <option value="$PROJECT_DIR$/client/src/main/webapp/author-add.xhtml" />
         <option value="$PROJECT_DIR$/client/src/main/webapp/rental-add.xhtml" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/client/src/main/java/BookBeen.java" />
         <option value="$PROJECT_DIR$/impl/src/main/java/LibraryRepository.java" />
         <option value="$PROJECT_DIR$/impl/src/main/java/LibraryService.java" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/index.xhtml" />
       </list>
     </option>
   </component>
@@ -184,7 +160,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,6 +274,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -475,17 +451,17 @@
       <workItem from="1554838423659" duration="4235000" />
       <workItem from="1554993007920" duration="16653000" />
       <workItem from="1555272573315" duration="4559000" />
+      <workItem from="1555309978309" duration="244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61890000" />
+    <option name="totallyTimeSpent" value="62134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -497,7 +473,7 @@
       <window_info id="Persistence" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.062193125" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.61538464" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,8 +557,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/webapp/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -737,16 +713,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/impl/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/impl/src/main/java/LibraryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+        <state relative-caret-position="2958">
+          <caret line="182" column="5" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/BookBeen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1373">
+        <state relative-caret-position="1989">
           <caret line="142" column="62" selection-start-line="142" selection-start-column="62" selection-end-line="142" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -754,20 +733,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/impl/src/main/java/LibraryRepository.java">
+    <entry file="file://$PROJECT_DIR$/impl/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="182" column="5" lean-forward="true" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/impl/src/main/java/LibraryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="127" column="60" lean-forward="true" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
+        <state relative-caret-position="1870">
+          <caret line="127" column="60" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -776,8 +752,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/webapp/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="184" column="64" lean-forward="true" selection-start-line="184" selection-start-column="64" selection-end-line="184" selection-end-column="64" />
+        <state relative-caret-position="169">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
