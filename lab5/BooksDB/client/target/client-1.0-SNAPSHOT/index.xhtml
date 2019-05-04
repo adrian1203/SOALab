@@ -172,12 +172,6 @@
             <h:column>
                 <f:facet name="header"><br></br>
                 </f:facet>
-                <h:commandButton value="Modifkuj" action="#{BookBeen.modify(user)}">
-                </h:commandButton>
-            </h:column>
-            <h:column>
-                <f:facet name="header"><br></br>
-                </f:facet>
                 <h:commandButton value="Usuń">
                     <f:ajax event="click" listener="#{BookBeen.bookServiceInterface.deleteUser(user)}" execute="@this"
                             render="@form"/>

@@ -7,11 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b0b82f-b036-4b48-aa67-ab3c514a1a5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheaterImplementation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TheaterImplementation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../theater/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../theater/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../theater/theater-client/target/theater-client/WEB-INF/lib/theater-implementation-1.0-SNAPSHOT-client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../theater/theater-client/target/theater-client/WEB-INF/lib/theater-implementation-1.0-SNAPSHOT-client.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../theater/theater-implementation/target/theater-implementation-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../theater/theater-implementation/target/theater-implementation-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/artifacts/lab8_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/artifacts/lab8_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/libraries/Maven__javax_ejb_javax_ejb_api_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/libraries/Maven__javax_faces_javax_faces_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/libraries/Maven__javax_javaee_api_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/libraries/Maven__org_primefaces_primefaces_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/libraries/Mojarra_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/lab8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/src/main/java/ForumBeen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab8/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/BooksDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/BooksDB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/BooksDB/client/target/client-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/BooksDB/client/target/client-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/BooksDB/client/target/client-1.0-SNAPSHOT/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/BooksDB/client/target/client-1.0-SNAPSHOT/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,12 +55,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -130,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -164,7 +184,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,23 +304,24 @@
       <workItem from="1553984019381" duration="913000" />
       <workItem from="1554052459322" duration="609000" />
       <workItem from="1554063446764" duration="77000" />
+      <workItem from="1556990978894" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22599000" />
+    <option name="totallyTimeSpent" value="22609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.88870704" visible="true" weight="0.23524962" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.88707036" visible="true" weight="0.23524962" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.22768533" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.22768533" />
-      <window_info active="true" id="Web" order="7" sideWeight="0.111292966" side_tool="true" visible="true" weight="0.23524962" />
+      <window_info active="true" id="Web" order="7" sideWeight="0.11292962" side_tool="true" visible="true" weight="0.23524962" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32474804" />
@@ -403,12 +423,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/podsumowanie.xhtml">
       <provider selected="true" editor-type-id="text-editor">
