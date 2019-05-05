@@ -8,86 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79045575-9520-4ab5-8873-7439d61140cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/artifacts/client_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/artifacts/client_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/libraries/Maven__api_api_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/libraries/Maven__javax_ejb_javax_ejb_api_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/libraries/Maven__javax_faces_javax_faces_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/libraries/Maven__javax_javaee_api_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/libraries/Maven__org_primefaces_primefaces_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forum/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/artifacts/lab8_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/artifacts/lab8_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__io_netty_netty_all_4_0_33_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__javax_ejb_javax_ejb_api_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__javax_faces_javax_faces_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__javax_javaee_api_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_apache_activemq_artemis_commons_1_1_0_wildfly_017.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_apache_activemq_artemis_core_client_1_1_0_wildfly_017.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_apache_activemq_artemis_hqclient_protocol_1_1_0_wildfly_017.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_apache_activemq_artemis_jms_client_1_1_0_wildfly_017.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_apache_activemq_artemis_journal_1_1_0_wildfly_017.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_apache_activemq_artemis_native_1_1_0_wildfly_017.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_apache_activemq_artemis_selector_1_1_0_wildfly_017.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_jboss_ejb_client_2_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_jboss_remote_naming_2_0_4_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_1_4_11_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_river_1_4_11_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_remoting_jboss_remoting_4_0_21_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_sasl_jboss_sasl_1_0_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_spec_javax_jms_jboss_jms_api_2_0_spec_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_4_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jboss_xnio_xnio_nio_3_4_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_jgroups_jgroups_3_6_10_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_primefaces_primefaces_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_7_jbossorg_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7_jbossorg_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_wildfly_checkstyle_wildfly_checkstyle_config_1_0_4_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Maven__org_wildfly_common_wildfly_common_1_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/Mojarra_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/lab8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/ForumBeen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/MyConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/MyMessageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/MyProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/domain/Topic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/repository/TopicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/service/ForumMenager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/webapp/rezerwacja.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab4/TheaterClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/TheaterClient/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/service/TopicService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/client/target/client-1.0-SNAPSHOT/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/impl/target/impl-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/src/main/java/ForumBeen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/main/java/ForumBeen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/src/main/java/repository/TopicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/main/java/repository/TopicRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/src/main/webapp/rezerwacja.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/main/webapp/rezerwacja.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/target/classes/ForumBeen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/target/classes/ForumBeen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/ForumBeen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/ForumBeen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/target/lab8-1.0-SNAPSHOT/rezerwacja.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/target/lab8-1.0-SNAPSHOT/rezerwacja.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/theater-client/target/" />
@@ -351,7 +280,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556999821688" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557000337738" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../forum/client" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />

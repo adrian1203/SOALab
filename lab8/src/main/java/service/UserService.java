@@ -1,12 +1,16 @@
 package service;
 
+import domain.Topic;
 import domain.User;
+import org.xnio.streams.LimitedInputStream;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateful;
+import javax.ejb.Stateless;
+import java.util.List;
 import java.util.logging.Logger;
 
-@Stateful
+@Stateless
 public class UserService {
     private User logedUser;
     private Boolean islogged;
@@ -64,5 +68,22 @@ public class UserService {
     public void logOut(){
         islogged=false;
         logedUser=null;
+    }
+
+    public void removeTopic(Topic topic){
+        LOGGER.info(topic.toString());
+        LOGGER.info("remove");
+        List<Topic> topics =logedUser.getTopicList();
+        topics.remove(topic);
+        logedUser.setTopicList(topics);
+    }
+
+    public void addTopic(Topic topic){
+        LOGGER.info(topic.toString());
+        LOGGER.info("add");
+
+        List<Topic> topics =logedUser.getTopicList();
+        topics.add(topic);
+        logedUser.setTopicList(topics);
     }
 }

@@ -15,6 +15,6 @@ public class MyProducer {
     JMSContext jmsContext;
 
     public void enqueue(final String text) {
-        jmsContext.createProducer().send(testQueue, "Siemkaaaaa");
+        jmsContext.createProducer().send(testQueue, "soa tesujemy ");
     }
 }
