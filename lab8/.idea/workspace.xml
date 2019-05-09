@@ -7,33 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d718c92-5d6a-4ad6-8b5b-1827dc066a03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/TopicService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab5/BooksDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/BooksDB/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ForumBeen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ForumBeen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyMessageBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TopicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TopicRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ForumMenager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ForumMenager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/rezerwacja.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/forum.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/forum.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/forum.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ForumBeen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ForumBeen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/TopicRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TopicRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ForumMenager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ForumMenager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/ForumBeen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/ForumBeen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/MyConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/MyProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/MyProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/repository/TopicRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/repository/TopicRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/service/ForumMenager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/service/ForumMenager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/rezerwacja.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../theater/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../theater/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/forum.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab8-1.0-SNAPSHOT/forum.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,10 +28,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ForumBeen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+            <state relative-caret-position="116">
+              <caret line="135" column="9" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1270#1271#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/forum.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="17">
+              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -398,18 +380,18 @@
       <updated>1556988969318</updated>
       <workItem from="1556988974708" duration="7099000" />
       <workItem from="1557044868647" duration="14039000" />
-      <workItem from="1557067410688" duration="1160000" />
+      <workItem from="1557067410688" duration="2800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22298000" />
+    <option name="totallyTimeSpent" value="23938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -419,7 +401,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.396072" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22094926" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -606,13 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/forum.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MyConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -620,12 +595,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/forum.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ForumBeen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        <state relative-caret-position="116">
+          <caret line="135" column="9" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
           </folding>
         </state>
       </provider>

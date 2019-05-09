@@ -8,6 +8,7 @@ import javax.ejb.ActivationConfigProperty;
 import javax.ejb.EJB;
 import javax.ejb.MessageDriven;
 import javax.faces.bean.ManagedBean;
+import javax.faces.component.html.HtmlSelectOneMenu;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
@@ -28,6 +29,16 @@ public class ForumBeen  implements MessageListener {
     private final static Logger LOGGER = Logger.getLogger(ForumBeen.class.getName());
     String selectedTopic;
     String selectedUser;
+
+    HtmlSelectOneMenu htmlSelectOneMenu;
+
+    public HtmlSelectOneMenu getHtmlSelectOneMenu() {
+        return htmlSelectOneMenu;
+    }
+
+    public void setHtmlSelectOneMenu(HtmlSelectOneMenu htmlSelectOneMenu) {
+        this.htmlSelectOneMenu = htmlSelectOneMenu;
+    }
 
     public ForumBeen() {
         this.messages.add("Jeabc to");
@@ -115,13 +126,14 @@ public class ForumBeen  implements MessageListener {
     }
 
     public void sendMessageToTopic(String message){
-        LOGGER.info(message);
+        //LOGGER.info(htmlSelectOneMenu.getValue().toString());
         LOGGER.info( selectedTopic);
         myProducer.enqueue(message);
 
     }
 
     public void sendMessageToUser(String message){
+       // LOGGER.info(htmlSelectOneMenu.getValue().toString());
         LOGGER.info(message);
         LOGGER.info( selectedUser);
         myProducer.enqueue(message);
