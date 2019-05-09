@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RESTKolekcja/RESTKolekcja/lib/jersey-server.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../RESTKolekcja/RESTKolekcja/lib/javax.faces-2.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../RESTKolekcja/RESTKolekcja/lib/jersey-client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../RESTKolekcja/RESTKolekcja/lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../RESTKolekcja/RESTKolekcja/lib/jersey-common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../RESTKolekcja/RESTKolekcja/lib/jersey-container-servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../RESTKolekcja/RESTKolekcja/lib/jersey-container-servlet-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../RESTKolekcja/RESTKolekcja/lib/javax.ws.rs-api-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

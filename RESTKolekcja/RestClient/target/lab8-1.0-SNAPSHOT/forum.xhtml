@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:f="http://xmlns.jcp.org/jsf/core" xml:lang="en" lang="en">
+<h:head>
+    <title>Forum</title>
+</h:head>
+
+<h:body>
+    <h1>Witaj <h:outputLabel value="#{ForumBeen.userService.logedUser.name}"></h:outputLabel></h1>
+    <h2>Twoje listy tematyczne</h2>
+    <h:form>
+
+        <h:dataTable  id="myTopic" value="#{ForumBeen.userService.logedUser.topicList}" var="topic" border="1" cellpadding="7px">
+            <h:column>
+                <f:facet name="header">Nazwa <br></br>
+                </f:facet>
+                #{topic.name}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Opis</f:facet>
+                #{topic.description}
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Usuń">
+                    <f:ajax event="click" listener="#{ForumBeen.userService.removeTopic(topic)}" execute="@this"
+                            render="@form"/>
+                </h:commandButton>
+            </h:column>
+        </h:dataTable>
+
+    <h2>Wszytskie listy Tematyczne</h2>
+
+        <h:dataTable  id="allTopic" value="#{ForumBeen.forumMenager.topics}" var="topic" border="1" cellpadding="7px">
+            <h:column>
+                <f:facet name="header">Nazwa <br></br>
+                </f:facet>
+                #{topic.name}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Opis</f:facet>
+                #{topic.description}
+            </h:column>
+            <h:column>
+                <f:facet name="header"><br></br>
+                </f:facet>
+                <h:commandButton value="Dołącz">
+                    <f:ajax event="click" listener="#{ForumBeen.userService.addTopic(topic)}"
+                            render="@form"/>
+                </h:commandButton>
+            </h:column>
+        </h:dataTable>
+    </h:form>
+    <h:form>
+        <h2>Wyślij wiadomość do grupy tematycznej</h2>
+        <h:panelGrid columns="3">
+
+            <h:outputText value="Grupa tematyczna"/>
+
+            <h:selectOneMenu value="#{ForumBeen.selectedTopic}">
+                <f:selectItems value="#{ForumBeen.forumMenager.topics}" var="topic"
+                               itemValue="#{topic.name}" itemLabel="#{topic.name}"/>
+            </h:selectOneMenu>
+            <h:outputText value="Wiadomosć:"/>
+            <h:inputText id="messageToTopic" binding="#{messageTopic}" />
+            <h:commandButton value="Wyślij" >
+                <f:ajax event="click"  listener="#{ForumBeen.sendMessageToTopic('sssssss')}"
+                        render="@form"/>
+            </h:commandButton>
+        </h:panelGrid>
+
+        <h2>Wyślij wiadomość do Użytkownika</h2>
+        <h:panelGrid columns="3">
+
+            <h:outputText value="Uzytkownik"/>
+
+            <h:selectOneMenu value="#{ForumBeen.htmlSelectOneMenu}">
+                <f:selectItems value="#{ForumBeen.forumMenager.users}" var="user"
+                               itemValue="#{user.name}" itemLabel="#{user.name}"/>
+            </h:selectOneMenu>
+            <h:outputText value="Wiadomosć:"/>
+            <h:inputText id="messageToUser" binding="#{messageUser}" />
+            <h:commandButton value="Wyślij">
+                <f:ajax event="click" listener="#{ForumBeen.sendMessageToUser(messageUser.value)}" execute="@this"
+                        render="@form"     process="@this messageUser"/>
+            </h:commandButton>
+        </h:panelGrid>
+
+        <h2>Otrzymane wiadomości</h2>
+
+        <h:dataTable  id="myMessage" value="#{ForumBeen.messages}" var="message" border="1" cellpadding="7px">
+            <h:column>
+                <f:facet name="header">Nazwa <br></br>
+                </f:facet>
+                #{message}
+            </h:column>
+        </h:dataTable>
+
+    </h:form>
+
+    <!--<h:form>-->
+        <!--<h:outputText id="messages" value="#{BookBean.message}" />-->
+        <!--<p:poll interval="5" listener="#{BookBean.nextMessage}" update="messages" />-->
+    <!--</h:form>-->
+
+
+</h:body>
+
+</html>

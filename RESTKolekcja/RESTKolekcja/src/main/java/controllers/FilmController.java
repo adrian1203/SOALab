@@ -2,12 +2,16 @@ package controllers;
 
 
 import domain.Film;
-import domain.RentalUser;
+
 import service.FilmService;
 
+import javax.json.Json;
+import javax.json.JsonObject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Path("/films")
@@ -67,6 +71,22 @@ public class FilmController {
         logger.info(URl);
         this.filmService.updateURL(URl, id);
     }
+//    @GET
+//    @Path("swagger")
+//    @ApiOperation(value = "Retrieve some example content", notes = "Return some json to the client")
+//    public Response getExample(){
+//        JsonObject jsonObject = Json.createObjectBuilder().add("name", "apiee example").add("url", "https://github.com/phillip-kruger/apiee-example").build();
+//        //log.log(Level.INFO, "GET: {0}", jsonObject);
+//        return Response.ok(jsonObject).build();
+//    }
+//    @GET
+//    @Produces(MediaType.APPLICATION_JSON_TYPE.)
+//    public List<Film> getAllFilmsContenetNegotiation() {
+//        return this.filmService.getAllFilms();
+//    }
+
+
+
 
 
 }
