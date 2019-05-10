@@ -8,6 +8,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 import java.util.logging.Logger;
 
 @Path("/users")
@@ -57,7 +58,7 @@ public class UserController {
     @GET
     @Path("{id}/films")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Film> getFavoriteFilm(@PathParam("id") Long id) {
+    public Set<Film> getFavoriteFilm(@PathParam("id") Long id) {
         return this.userService.getFavouriteFilm(id);
     }
 

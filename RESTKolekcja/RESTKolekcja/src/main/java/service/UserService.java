@@ -5,6 +5,7 @@ import domain.RentalUser;
 import repository.UserRepository;
 
 import java.util.List;
+import java.util.Set;
 
 public class UserService {
 
@@ -29,7 +30,7 @@ public class UserService {
         this.userRepository.createUser(rentalUser);
     }
 
-    public List<Film> getFavouriteFilm(Long id){
+    public Set<Film> getFavouriteFilm(Long id){
        return this.getUserById(id).getFilms();
     }
 }

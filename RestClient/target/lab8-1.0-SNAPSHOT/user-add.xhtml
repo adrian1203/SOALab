@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core" xml:lang="en" lang="en">
+<h:head>
+    <title>Dodaj książkę</title>
+</h:head>
+
+<h:body>
+    <h2>Dodaj książkę</h2>
+    <h:form>
+
+        <h:panelGrid columns="3">
+
+            <h:outputText value="Imie"/>
+            <h:inputText id="name" binding="#{fistNme}"/>
+        </h:panelGrid>
+        <h:panelGrid columns="3">
+
+            <h:outputText value="Imie"/>
+            <h:inputText id="lastname" binding="#{lastName}"/>
+        </h:panelGrid>
+
+
+        <h:panelGrid columns="3">
+            <h:outputText value="Ulubione filmy"/>
+
+            <!--<h:selectOneMenu value="#{BookBeen.selectedAuthorToBook}">-->
+            <!--<f:selectItems value="#{BookBeen.bookServiceInterface.getAllAuthor()}" var="author"-->
+            <!--itemValue="#{author.id}" itemLabel="#{author.lastName}"/>-->
+            <!--</h:selectOneMenu>-->
+            <h:selectManyCheckbox id="seats" value="#{RentalBeen.choosedFilm}" valueChangeListener="#{RentalBeen.displayChoosedFilm()}">
+                <c:forEach var="film" varStatus="loop" items="#{RentalBeen.getAllFilms()}">
+                    <f:selectItem itemValue="#{film}" itemLabel="#{film.title}"/>
+                </c:forEach>
+                <!--<f:ajax event="change" execute="@this" render="choosedFilm"/>-->
+            </h:selectManyCheckbox>
+        </h:panelGrid>
+
+
+        <h:commandButton value="Dodaj uzytkownika" onclick="true"
+                         action="#{RentalBeen.createUser(fistNme.value, lastName.value)}"/>
+        <h:commandButton value="Wroć"
+                         action="/index.xhtml?faces-redirect=true"/>
+    </h:form>
+</h:body>
+</html>
