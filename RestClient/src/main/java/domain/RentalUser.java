@@ -7,7 +7,7 @@ import java.util.List;
 
 @JsonIgnoreProperties
 public class RentalUser {
-    private Long id;
+    private Long idUser;
 
     private String firstName;
 
@@ -15,12 +15,12 @@ public class RentalUser {
 
     private List<Film> films;
 
-    public Long getId() {
-        return id;
+    public Long getIdUser() {
+        return idUser;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdUser(Long idUser) {
+        this.idUser = idUser;
     }
 
     public String getFirstName() {

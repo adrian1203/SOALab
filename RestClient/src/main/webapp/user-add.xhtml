@@ -5,11 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core" xml:lang="en" lang="en">
 <h:head>
-    <title>Dodaj książkę</title>
+    <title>Dodaj użytkownika</title>
 </h:head>
 
 <h:body>
-    <h2>Dodaj książkę</h2>
+    <h2>Dodaj użytkownika</h2>
     <h:form>
 
         <h:panelGrid columns="3">
@@ -19,7 +19,7 @@
         </h:panelGrid>
         <h:panelGrid columns="3">
 
-            <h:outputText value="Imie"/>
+            <h:outputText value="Nazwisko"/>
             <h:inputText id="lastname" binding="#{lastName}"/>
         </h:panelGrid>
 
@@ -29,7 +29,7 @@
 
             <!--<h:selectOneMenu value="#{BookBeen.selectedAuthorToBook}">-->
             <!--<f:selectItems value="#{BookBeen.bookServiceInterface.getAllAuthor()}" var="author"-->
-            <!--itemValue="#{author.id}" itemLabel="#{author.lastName}"/>-->
+            <!--itemValue="#{author.idUser}" itemLabel="#{author.lastName}"/>-->
             <!--</h:selectOneMenu>-->
             <h:selectManyCheckbox id="seats" value="#{RentalBeen.choosedFilm}" valueChangeListener="#{RentalBeen.displayChoosedFilm()}">
                 <c:forEach var="film" varStatus="loop" items="#{RentalBeen.getAllFilms()}">

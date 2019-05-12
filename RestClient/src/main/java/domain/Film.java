@@ -2,16 +2,12 @@ package domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import javax.persistence.*;
-import java.io.Serializable;
-
-
 
 @JsonIgnoreProperties
 public class Film  {
 
 
-    private Long id;
+    private Long idFilm;
 
     private String title;
 
@@ -25,12 +21,12 @@ public class Film  {
     public Film() {
     }
 
-    public Long getId() {
-        return id;
+    public Long getIdFilm() {
+        return idFilm;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdFilm(Long idFilm) {
+        this.idFilm = idFilm;
     }
 
     public String getTitle() {

@@ -29,6 +29,15 @@ public class RentalBeen {
     private List<Film> choosedFilm = new ArrayList<Film>();
     private Film selectedFilm;
     private RentalUser selectedUser;
+    private List<Film> filteredFilms = new ArrayList<Film>();
+
+    public List<Film> getFilteredFilms() {
+        return filteredFilms;
+    }
+
+    public void setFilteredFilms(List<Film> filteredFilms) {
+        this.filteredFilms = filteredFilms;
+    }
 
     public RentalUser getSelectedUser() {
         return selectedUser;
@@ -61,34 +70,7 @@ public class RentalBeen {
         String value = response.readEntity(String.class);
         logger.info(value);
     }
-//    public String test (){
-//        ResteasyClient client = new ResteasyClientBuilder().build();
-//        ResteasyWebTarget target = client.target("http://localhost:8080/RESTKolekcja_war/rest/users/1623");
-//        Response response = target.request().get();
-//        String value = response.readEntity(String.class);
-//        logger.info(value);
-//        ObjectMapper mapper=new ObjectMapper();
-//        try {
-//
-//
-//            domain.RentalUser staff2 = mapper.readValue(value, domain.RentalUser.class);
-//
-//            // compact print
-//            System.out.println(staff2);
-//
-//            // pretty print
-//            String prettyStaff1 = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(staff2);
-//
-//            System.out.println(prettyStaff1);
-//            logger.info(staff2.toString());
-//
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return "/index.xhtml?faces-redirect=true";
-//    }
+
 
     public List<RentalUser> getAllUser(){
         ResteasyClient client = new ResteasyClientBuilder().build();
@@ -119,6 +101,24 @@ public class RentalBeen {
         }
         return films;
     }
+
+//    public void getFilteredFilm(String title){
+//        logger.info("filetered");
+//        logger.info(title);
+//        ResteasyClient client = new ResteasyClientBuilder().build();
+//        ResteasyWebTarget target = client.target("http://localhost:8080/RESTKolekcja_war/rest/films/filtered?title="+title);
+//        Response response = target.request().get();
+//        String value = response.readEntity(String.class);
+//        ObjectMapper mapper=new ObjectMapper();
+//        List<Film> films=new LinkedList<Film>();
+//        try {
+//            films = mapper.readValue(value, new TypeReference<List<Film>>(){});
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        filteredFilms=films;
+//
+//    }
 
     public void deleteUser(Long id){
         ResteasyClient client = new ResteasyClientBuilder().build();
@@ -181,7 +181,7 @@ public class RentalBeen {
     }
     public String updateFilm(){
         ResteasyClient client = new ResteasyClientBuilder().build();
-        String url ="http://localhost:8080/RESTKolekcja_war/rest/films/"+selectedFilm.getId();
+        String url ="http://localhost:8080/RESTKolekcja_war/rest/films/"+selectedFilm.getIdFilm();
         ResteasyWebTarget target = client.target(url);
 //        Response response =target.request().header("Content-Type","application/json").post(film);
         Response response = target.request().put(Entity.entity(selectedFilm,MediaType.APPLICATION_JSON));
@@ -198,7 +198,7 @@ public class RentalBeen {
     }
     public String updateUser(){
         ResteasyClient client = new ResteasyClientBuilder().build();
-        String url ="http://localhost:8080/RESTKolekcja_war/rest/users/"+selectedUser.getId();
+        String url ="http://localhost:8080/RESTKolekcja_war/rest/users/"+selectedUser.getIdUser();
         ResteasyWebTarget target = client.target(url);
         Response response = target.request().put(Entity.entity(selectedUser,MediaType.APPLICATION_JSON));
         logger.info(response.getHeaders().toString());

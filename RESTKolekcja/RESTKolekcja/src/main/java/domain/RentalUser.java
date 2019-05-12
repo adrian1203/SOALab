@@ -3,7 +3,6 @@ package domain;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -12,7 +11,8 @@ public class RentalUser implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "CUST_GEN")
-    private Long id;
+    @Column(name = "id_user", nullable = false)
+    private Long idUser;
 
     @Column(name = "first_name")
     private String firstName;
@@ -20,8 +20,13 @@ public class RentalUser implements Serializable {
     @Column(name = "last_namee")
     private String lastName;
 
-    @OneToMany(cascade = {CascadeType.ALL})
-    private Set<Film> films=new HashSet<Film>();
+    @ManyToMany(cascade = {CascadeType.MERGE})
+    @JoinTable(
+            name = "Films_RentalUser",
+            joinColumns = { @JoinColumn(name = "id_film") },
+            inverseJoinColumns = { @JoinColumn(name = "id_user")}
+    )
+    private Set<Film> films = new HashSet<Film>();
 
     public RentalUser(String firstName, String lastName) {
         this.firstName = firstName;
@@ -31,12 +36,12 @@ public class RentalUser implements Serializable {
     public RentalUser() {
     }
 
-    public Long getId() {
-        return id;
+    public Long getIdUser() {
+        return idUser;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdUser(Long id) {
+        this.idUser = id;
     }
 
     public String getFirstName() {

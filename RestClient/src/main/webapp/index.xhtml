@@ -26,9 +26,15 @@
          </h:column>
          <h:column>
             <f:facet name="header">Ulubione Filmy</f:facet>
-            <c:forEach var="film" varStatus="loop" items="#{user.films}" >
-               #{film.title}
-            </c:forEach>
+            <h:dataTable value="#{user.films}" var="film">
+               <h:column>
+                  #{film.title}
+               </h:column>
+               
+            </h:dataTable>
+            <!--<c:forEach var="film" varStatus="loop" items="#{user.films}" >-->
+               <!--#{film.title}-->
+            <!--</c:forEach>-->
          </h:column>
          <h:column>
             <f:facet name="header"><br></br>
@@ -41,7 +47,7 @@
             <f:facet name="header"><br></br>
             </f:facet>
             <h:commandButton value="Usuń">
-               <f:ajax event="click" listener="#{RentalBeen.deleteUser(user.id)}" execute="@this"
+               <f:ajax event="click" listener="#{RentalBeen.deleteUser(user.idUser)}" execute="@this"
                        render="@form"/>
             </h:commandButton>
          </h:column>
@@ -76,16 +82,16 @@
          <f:facet name="header"><br></br>
          </f:facet>
          <h:commandButton value="Usuń">
-         <f:ajax event="click" listener="#{RentalBeen.deleteFilm(film.id)}" execute="@this"
+         <f:ajax event="click" listener="#{RentalBeen.deleteFilm(film.idFilm)}" execute="@this"
          render="@form"/>
          </h:commandButton>
          </h:column>
       </h:dataTable>
 
       <h:commandButton value="Dodaj Film" action="/film-add.xhtml?faces-redirect=true"/>
-
-
    </h:form>
+
+
 
 
 
